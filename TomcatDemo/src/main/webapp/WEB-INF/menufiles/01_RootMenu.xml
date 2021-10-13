@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:menu xmlns:tns="http://www.example.org/NewXMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/NewXMLSchema NewXMLSchema.xsd ">
+    <tns:title>Root</tns:title>
+    <tns:description>Für alle Teilprojekte gemeinsame Menüpunkte</tns:description>
+    <tns:menuitem url="/TomcatDemo/">
+    Hauptseite
+  </tns:menuitem>
+</tns:menu>

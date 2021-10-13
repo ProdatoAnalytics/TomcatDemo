@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                                 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	id="WebApp_ID" version="3.1">
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-	</welcome-file-list>
+    id="WebApp_ID" version="3.1">
+
+    <!-- ########################################################################################### -->
+    <!-- ############### BEGIN COMMON ############################################################## -->
+    <!-- ########################################################################################### -->
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <description>Zentrales Menu. Wird für unterschiedliche Branches über XML-Dateien gepflegt</description>
+        <display-name>MenuServlet</display-name>
+        <servlet-name>MenuServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.MenuServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MenuServlet</servlet-name>
+        <url-pattern>/menu</url-pattern>
+    </servlet-mapping>
+
+    <!-- ########################################################################################### -->
+    <!-- ############### END COMMON ################################################################ -->
+    <!-- ########################################################################################### -->
+
 </web-app>
