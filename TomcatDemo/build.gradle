@@ -1,0 +1,40 @@
+plugins {
+    id 'eclipse'
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+dependencies {
+	implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+	implementation group: 'com.flipkart.utils', name: 'javatuples', version: '3.0'
+	
+	// JAXB
+	implementation group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: '3.0.1'
+	implementation group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '3.0.1' // Seit Java 11 nicht mehr in Jave mit enthalten 
+	implementation group: 'com.sun.xml.bind', name: 'jaxb-xjc', version: '3.0.1' // Zur Generierung von JAXB-Klassen zu einem Schema
+	
+	
+	// Damit die Tomcat Libraries der Runtime nicht jedes mal manuell mit eingebunden werden müssen.
+	implementation group: 'org.apache.tomcat', name: 'tomcat-catalina', version: '10.0.12'
+	
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+
