@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:menu xmlns:tns="http://www.example.org/NewXMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/NewXMLSchema NewXMLSchema.xsd ">
+    <tns:title>Servlet</tns:title>
+    <tns:description>Spielwiese für einfache Servlets</tns:description>
+    <tns:menuitem url="/TomcatDemo/HelloWorldServlet">
+    Hello World Servlet Beispiel
+  </tns:menuitem>
+</tns:menu>
