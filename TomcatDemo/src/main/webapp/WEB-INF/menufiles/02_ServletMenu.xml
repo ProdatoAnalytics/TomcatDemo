@@ -7,4 +7,7 @@
     <tns:menuitem url="/TomcatDemo/HelloWorldServlet">
     Hello World Servlet Beispiel
   </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/ShowStatusServlet">
+    Ausgabe aller grundlegenden Parameter, mit denen das Servlet aufgerufen wurde (Servlet, Context etc.)
+  </tns:menuitem>
 </tns:menu>

@@ -65,6 +65,17 @@
 		<url-pattern>/HelloWorldServlet</url-pattern>
 	</servlet-mapping>
 
+    <servlet>
+        <description>Ausgabe aller grundlegenden Parameter, mit denen das Servlet aufgerufen wurde (Servlet, Context etc.)</description>
+        <display-name>ShowStatusServlet</display-name>
+        <servlet-name>ShowStatusServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.ShowStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowStatusServlet</servlet-name>
+        <url-pattern>/ShowStatusServlet/*</url-pattern>
+    </servlet-mapping>
+
     <!-- ########################################################################################### -->
     <!-- ############### END SERVLET ############################################################### -->
     <!-- ########################################################################################### -->
