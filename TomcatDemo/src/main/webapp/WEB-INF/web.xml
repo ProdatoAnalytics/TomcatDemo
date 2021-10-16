@@ -87,6 +87,34 @@
         <url-pattern>/StreamDownloadServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <description>CSV-Datei wird mithilfe eines Filters in eine HTML-Tabelle umgewandelt</description>
+        <display-name>CsvFilterServlet</display-name>
+        <servlet-name>CsvFilterServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.CsvFilterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CsvFilterServlet</servlet-name>
+        <url-pattern>/subtests/filter/*</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>CsvToTableFilter</filter-name>
+        <filter-class>com.prodato.norma.demo.tomcat.servlet.filter.CsvToTableFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>LatexFilter</filter-name>
+        <filter-class>com.prodato.norma.demo.tomcat.servlet.filter.LatexFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CsvToTableFilter</filter-name>
+        <url-pattern>*.csv</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LatexFilter</filter-name>
+        <url-pattern>/subtests/filter/*</url-pattern>
+    </filter-mapping>
+
     <!-- ########################################################################################### -->
     <!-- ############### END SERVLET ############################################################### -->
     <!-- ########################################################################################### -->

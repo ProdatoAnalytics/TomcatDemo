@@ -13,4 +13,12 @@
     <tns:menuitem url="/TomcatDemo/StreamDownloadServlet">
     Test von einfachem Download einer PDF-Datei.
   </tns:menuitem>
+    <tns:menuitem
+        url="/TomcatDemo/subtests/filter/Demo.csv">
+    Test für CsvFilterServlet: CSV-Datei wird mithilfe eines Filters in eine HTML-Tabelle umgewandelt. (Hier greift sowohl der CsvToTableFilter als auch der LatexFilter)
+  </tns:menuitem>
+    <tns:menuitem
+        url="/TomcatDemo/subtests/filter/DemoHtml.html">
+    Test für CsvFilterServlet: Es wird einfach nur eine HTML-Seite durchgeschleift. (Hier greift der LatexFilter aber immer noch!)
+  </tns:menuitem>
 </tns:menu>

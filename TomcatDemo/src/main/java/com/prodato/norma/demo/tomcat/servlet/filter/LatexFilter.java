@@ -1,9 +1,8 @@
 package com.prodato.norma.demo.tomcat.servlet.filter;
 
+import java.io.CharArrayWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-
-import com.prodato.norma.demo.tomcat.utils.CharResponseWrapper;
 
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
@@ -11,6 +10,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponseWrapper;
 
 
 public class LatexFilter implements Filter {
@@ -32,4 +32,25 @@ public class LatexFilter implements Filter {
         responseWriter.write(alteredContent);
     }
 
+    /**
+     * Wrapper: Fängt den Inhalt einer Response ab.
+     */
+    public class CharResponseWrapper extends HttpServletResponseWrapper {
+        private final CharArrayWriter writer;
+
+        public CharResponseWrapper(final HttpServletResponse response) {
+            super(response);
+            writer = new CharArrayWriter();
+        }
+
+        @Override
+        public PrintWriter getWriter() {
+            return new PrintWriter(writer);
+        }
+
+        @Override
+        public String toString() {
+            return writer.toString();
+        }
+    }
 }
