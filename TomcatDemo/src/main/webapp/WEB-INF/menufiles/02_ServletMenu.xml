@@ -10,4 +10,7 @@
     <tns:menuitem url="/TomcatDemo/ShowStatusServlet">
     Ausgabe aller grundlegenden Parameter, mit denen das Servlet aufgerufen wurde (Servlet, Context etc.)
   </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/StreamDownloadServlet">
+    Test von einfachem Download einer PDF-Datei.
+  </tns:menuitem>
 </tns:menu>

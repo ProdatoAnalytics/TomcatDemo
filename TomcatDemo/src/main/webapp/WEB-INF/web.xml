@@ -49,21 +49,21 @@
     <!-- ########################################################################################### -->
     <!-- ############### END COMMON ################################################################ -->
     <!-- ########################################################################################### -->
-    
+
     <!-- ########################################################################################### -->
     <!-- ############### BEGIN SERVLET ############################################################# -->
     <!-- ########################################################################################### -->
 
-	<servlet>
-		<description>Einfaches Hello World zur Demonstration eines Servlets auf Tomcat</description>
-		<display-name>HelloWorldServlet</display-name>
-		<servlet-name>HelloWorldServlet</servlet-name>
-		<servlet-class>com.prodato.norma.demo.tomcat.servlet.HelloWorldServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>HelloWorldServlet</servlet-name>
-		<url-pattern>/HelloWorldServlet</url-pattern>
-	</servlet-mapping>
+    <servlet>
+        <description>Einfaches Hello World zur Demonstration eines Servlets auf Tomcat</description>
+        <display-name>HelloWorldServlet</display-name>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.HelloWorldServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/HelloWorldServlet</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <description>Ausgabe aller grundlegenden Parameter, mit denen das Servlet aufgerufen wurde (Servlet, Context etc.)</description>
@@ -74,6 +74,17 @@
     <servlet-mapping>
         <servlet-name>ShowStatusServlet</servlet-name>
         <url-pattern>/ShowStatusServlet/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Tests für den Download einer Binärdatei</description>
+        <display-name>StreamDownloadServlet</display-name>
+        <servlet-name>StreamDownloadServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.StreamDownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StreamDownloadServlet</servlet-name>
+        <url-pattern>/StreamDownloadServlet</url-pattern>
     </servlet-mapping>
 
     <!-- ########################################################################################### -->
