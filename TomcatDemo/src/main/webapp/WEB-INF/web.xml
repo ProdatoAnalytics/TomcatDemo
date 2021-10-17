@@ -98,6 +98,17 @@
         <url-pattern>/subtests/filter/*</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <description>Weiterleitung zu einer Fehlerseite im Fehlerfall</description>
+        <display-name>RedirectionServlet</display-name>
+        <servlet-name>RedirectionServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.RedirectionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RedirectionServlet</servlet-name>
+        <url-pattern>/RedirectionServlet</url-pattern>
+    </servlet-mapping>
+
     <filter>
         <filter-name>CsvToTableFilter</filter-name>
         <filter-class>com.prodato.norma.demo.tomcat.servlet.filter.CsvToTableFilter</filter-class>

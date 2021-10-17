@@ -21,4 +21,8 @@
         url="/TomcatDemo/subtests/filter/DemoHtml.html">
     Test für CsvFilterServlet: Es wird einfach nur eine HTML-Seite durchgeschleift. (Hier greift der LatexFilter aber immer noch!)
   </tns:menuitem>
+    <tns:menuitem
+        url="/TomcatDemo/RedirectionServlet">
+    Test für eine Weiterleitung im Fehlerfall durch Filter. Außerdem für eine Trennung von Post und Get und eine erste primitive Form.
+  </tns:menuitem>
 </tns:menu>

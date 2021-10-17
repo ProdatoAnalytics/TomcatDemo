@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:tips xmlns:tns="http://www.example.org/NewXMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/NewXMLSchema TipsSchema.xsd ">
+    <tns:title>Servlet</tns:title>
+    <tns:description>Tips für Sachen, die nur Servlets betreffen</tns:description>
+    <tns:tip>
+        <tns:topic>doPost</tns:topic>
+        <tns:description>Nicht nur ausschließlich GET (Stichwort: Form, POST, Parameter)</tns:description>
+        <tns:locations>
+            <tns:location>RedirectionServlet.java</tns:location>
+        </tns:locations>
+    </tns:tip>
+
+</tns:tips>
