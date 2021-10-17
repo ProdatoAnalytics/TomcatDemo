@@ -11,5 +11,12 @@
             <tns:location>RedirectionServlet.java</tns:location>
         </tns:locations>
     </tns:tip>
+    <tns:tip>
+        <tns:topic>Redirectiom durch Filter</tns:topic>
+        <tns:description>Zentrale Weiterleidung zu Fehlerseite (Stichwort: Filter, Redirect)</tns:description>
+        <tns:locations>
+            <tns:location>RedirectionServlet.java</tns:location>
+        </tns:locations>
+    </tns:tip>
 
 </tns:tips>

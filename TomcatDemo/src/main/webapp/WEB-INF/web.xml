@@ -98,17 +98,6 @@
         <url-pattern>/subtests/filter/*</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <description>Weiterleitung zu einer Fehlerseite im Fehlerfall</description>
-        <display-name>RedirectionServlet</display-name>
-        <servlet-name>RedirectionServlet</servlet-name>
-        <servlet-class>com.prodato.norma.demo.tomcat.servlet.RedirectionServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>RedirectionServlet</servlet-name>
-        <url-pattern>/RedirectionServlet</url-pattern>
-    </servlet-mapping>
-
     <filter>
         <filter-name>CsvToTableFilter</filter-name>
         <filter-class>com.prodato.norma.demo.tomcat.servlet.filter.CsvToTableFilter</filter-class>
@@ -124,6 +113,26 @@
     <filter-mapping>
         <filter-name>LatexFilter</filter-name>
         <url-pattern>/subtests/filter/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <description>Weiterleitung zu einer Fehlerseite im Fehlerfall</description>
+        <display-name>RedirectionServlet</display-name>
+        <servlet-name>RedirectionServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.RedirectionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RedirectionServlet</servlet-name>
+        <url-pattern>/RedirectionServlet</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>RedirectionFilter</filter-name>
+        <filter-class>com.prodato.norma.demo.tomcat.servlet.filter.RedirectionFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>RedirectionFilter</filter-name>
+        <url-pattern>/RedirectionServlet</url-pattern>
     </filter-mapping>
 
     <!-- ########################################################################################### -->
