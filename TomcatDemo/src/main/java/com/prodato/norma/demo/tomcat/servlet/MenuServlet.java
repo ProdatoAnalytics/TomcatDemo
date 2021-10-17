@@ -33,7 +33,6 @@ public class MenuServlet extends HttpServlet {
         final String menuPath = getServletContext().getRealPath("/WEB-INF/menufiles");
         final MenuLoader menuLoader = new MenuLoader(new File(menuPath));
 
-        // TODO Auto-generated method stub
         final PrintWriter writer = response.getWriter();
         writer.append("<html>");
         writer.append("<head><title>Demo Menu</title></head>");

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:tips xmlns:tns="http://www.example.org/NewXMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/NewXMLSchema TipsSchema.xsd ">
+    <tns:title>Root</tns:title>
+    <tns:description>Tips für Sachen, die im allgemeinen Teil des Projekts liegen</tns:description>
+    <tns:tip>
+        <tns:topic>JAXB</tns:topic>
+        <tns:description>Auslesen von XML-Dateien mit Hilfe von automatisch generierten Pojos (Stichwort: XJC)</tns:description>
+        <tns:locations>
+            <tns:location>MenuLoader.java</tns:location>
+            <tns:location>NewXMLSchema.xsd</tns:location>
+            <tns:location>menufiles</tns:location>
+        </tns:locations>
+    </tns:tip>
+
+</tns:tips>

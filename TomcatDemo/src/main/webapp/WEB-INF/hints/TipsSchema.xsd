@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.example.org/NewXMLSchema"
+    xmlns:tns="http://www.example.org/NewXMLSchema"
+    elementFormDefault="qualified">
+
+    <element name="tips">
+        <complexType>
+            <sequence>
+                <element name="title" type="string" />
+                <element name="description" type="string"
+                    minOccurs="0" />
+                <element name="tip">
+                    <complexType>
+                        <sequence>
+                            <element name="topic" type="string" />
+                            <element name="description"
+                                type="string" minOccurs="0" />
+                            <element name="locations"
+                                maxOccurs="unbounded">
+                                <complexType>
+                                    <sequence>
+                                    <element name="location"
+                                type="string" maxOccurs="unbounded" />
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+
+
+</schema>

@@ -10,8 +10,19 @@
     <!-- ########################################################################################### -->
 
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
+        <welcome-file>WelcomeServlet</welcome-file>
     </welcome-file-list>
+
+    <servlet>
+        <description>Willkommensseite</description>
+        <display-name>WelcomeServlet</display-name>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.WelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <url-pattern>/WelcomeServlet</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <description>Zentrales Menu. Wird für unterschiedliche Branches über XML-Dateien gepflegt</description>
