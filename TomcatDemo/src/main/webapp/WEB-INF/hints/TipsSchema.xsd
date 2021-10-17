@@ -10,7 +10,7 @@
                 <element name="title" type="string" />
                 <element name="description" type="string"
                     minOccurs="0" />
-                <element name="tip">
+                <element name="tip" maxOccurs="unbounded">
                     <complexType>
                         <sequence>
                             <element name="topic" type="string" />
