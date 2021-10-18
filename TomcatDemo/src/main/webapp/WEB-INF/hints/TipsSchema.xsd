@@ -16,12 +16,21 @@
                             <element name="topic" type="string" />
                             <element name="description"
                                 type="string" minOccurs="0" />
-                            <element name="locations"
-                                maxOccurs="unbounded">
+                            <element name="locations">
                                 <complexType>
                                     <sequence>
-                                    <element name="location"
-                                type="string" maxOccurs="unbounded" />
+                                        <element name="location"
+                                            type="string"
+                                            maxOccurs="unbounded" />
+                                    </sequence>
+                                </complexType>
+                            </element>
+                            <element name="tags" minOccurs="0">
+                                <complexType>
+                                    <sequence>
+                                        <element name="tag"
+                                            type="string"
+                                            maxOccurs="unbounded" />
                                     </sequence>
                                 </complexType>
                             </element>

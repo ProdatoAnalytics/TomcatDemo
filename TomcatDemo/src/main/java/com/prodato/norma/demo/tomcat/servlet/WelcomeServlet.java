@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Collection;
+import java.util.Comparator;
+import java.util.Set;
+import java.util.TreeSet;
 
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
@@ -35,6 +38,13 @@ public class WelcomeServlet extends HttpServlet {
         final String hintsPath = getServletContext().getRealPath("/WEB-INF/hints");
         final String xslPath = getServletContext().getRealPath("/WEB-INF/hints/TipsSchema.xsl");
         final Collection<File> xmlFiles = FileUtils.listFiles(new File(hintsPath), XML_EXTENSIONS, false);
+        final Set<File> xmlFilesSorted = new TreeSet<>(new Comparator<File>() {
+            @Override
+            public int compare(final File f1, final File f2) {
+                return f1.getName().compareTo(f2.getName());
+            }
+        });
+        xmlFilesSorted.addAll(xmlFiles);
         final File xslFile = new File(xslPath);
 
         final PrintWriter writer = response.getWriter();
@@ -52,7 +62,7 @@ public class WelcomeServlet extends HttpServlet {
 
         writer.append("<p>Es folgt eine Liste von Verweisen, in welchen Klassen und Dateien man Beispielfälle zu unterschiedlichen Technologien finden kann</p>");
 
-        for (final File xmlFile : xmlFiles) {
+        for (final File xmlFile : xmlFilesSorted) {
             writer.append(WelcomeServlet.transform(xmlFile, xslFile));
         }
 

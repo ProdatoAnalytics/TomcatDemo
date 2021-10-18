@@ -45,7 +45,7 @@ public class MenuServlet extends HttpServlet {
             }
             writer.append("<ul>");
             for (final Menuitem menuEntry : menu.getMenuitem()) {
-                writer.append("<li><a href=\"").append(menuEntry.getUrl()).append("\"/>").append(menuEntry.getValue()).append("</li>");
+                writer.append("<li><a href=\"").append(menuEntry.getUrl()).append("\">").append(menuEntry.getValue()).append("</a></li>");
             }
             writer.append("</ul>");
             writer.append("<hr/>");

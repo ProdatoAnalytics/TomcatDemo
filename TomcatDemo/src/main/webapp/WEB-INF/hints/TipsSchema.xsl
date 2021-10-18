@@ -21,7 +21,10 @@
     </xsl:template>
 
     <xsl:template match="tns:tip">
-        <b><xsl:value-of select="./tns:topic" /></b>: <xsl:value-of select="./tns:description" /> (<xsl:apply-templates select="./tns:locations"/>)
+        <li>
+            <b><xsl:value-of select="./tns:topic" /></b>: <xsl:value-of select="./tns:description" /> (<xsl:apply-templates select="./tns:locations"/>)
+            <br/>Tags: <xsl:apply-templates select="./tns:tags"/>
+        </li>
     </xsl:template>
 
     <xsl:template match="tns:locations">
@@ -33,6 +36,15 @@
                 </xsl:if>
             </xsl:for-each>
         </b>
+    </xsl:template>
+
+    <xsl:template match="tns:tags">
+        <xsl:for-each select="*">
+            <xsl:value-of select="." />
+            <xsl:if test="position() != last()">
+                <xsl:text>, </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
 
 </xsl:stylesheet>
