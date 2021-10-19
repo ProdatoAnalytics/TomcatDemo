@@ -50,4 +50,39 @@
     <!-- ############### END COMMON ################################################################ -->
     <!-- ########################################################################################### -->
 
+    <!-- ########################################################################################### -->
+    <!-- ############### BEGIN DATABASE ############################################################ -->
+    <!-- ########################################################################################### -->
+
+    <servlet>
+        <description>Dient als Treiber für den Zugriff auf die HSQLDB-Datenbank</description>
+        <display-name>HyperSQLServlet</display-name>
+        <servlet-name>HyperSQLServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.HsqlServlet</servlet-class>
+        <init-param>
+            <param-name>hsqldb.server.database</param-name>
+            <param-value>mem:tomcatdemo</param-value> <!-- Eine In-Memory Datenbank mit Namen tomcatdem -->
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HyperSQLServlet</servlet-name>
+        <url-pattern>/HSQLDB</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Einfaches Code-Demo für die Hsql-DB</description>
+        <display-name>SqlDemoServlet</display-name>
+        <servlet-name>SqlDemoServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.SqlDemoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SqlDemoServlet</servlet-name>
+        <url-pattern>/SqlDemoServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- ########################################################################################### -->
+    <!-- ############### END DATABASE ############################################################## -->
+    <!-- ########################################################################################### -->
+
 </web-app>

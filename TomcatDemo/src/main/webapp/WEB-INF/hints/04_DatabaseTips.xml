@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:tips xmlns:tns="http://www.example.org/NewXMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/NewXMLSchema TipsSchema.xsd ">
+    <tns:title>Datenbanken und JPA</tns:title>
+    <tns:description>Alle Spielwiesen für die Datenbank im allgemeinen (HyperSQL) und JPA (EclipseLink) im speziellen.</tns:description>
+    <tns:tip>
+        <tns:topic>HyperSqlDB</tns:topic>
+        <tns:description>Verbindung mit einer Inmemory-Datenbank mit einem Servlet als URL. Einfaches Beispiel mit allem Code innerhalb einer Klasse.</tns:description>
+        <tns:locations>
+            <tns:location>HsqlServlet.java</tns:location>
+            <tns:location>SqlDemoServlet.java</tns:location>
+            <tns:location>web.xml</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>HSQL</tns:tag>
+            <tns:tag>Init-Parameter</tns:tag>
+        </tns:tags>
+    </tns:tip>
+
+</tns:tips>

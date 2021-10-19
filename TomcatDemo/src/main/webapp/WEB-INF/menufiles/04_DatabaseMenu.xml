@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:menu xmlns:tns="http://www.example.org/NewXMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/NewXMLSchema NewXMLSchema.xsd ">
+    <tns:title>Datenbanken und JPA</tns:title>
+    <tns:description>Alle Spielwiesen für die Datenbank im allgemeinen (HyperSQL) und JPA (EclipseLink) im speziellen.</tns:description>
+    <tns:menuitem url="/TomcatDemo/HSQLDB">
+    Datenbankstatus
+  </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/SqlDemoServlet">
+    Einfaches Codebeispel für die HsqlDB Datenbank.
+  </tns:menuitem>
+</tns:menu>
