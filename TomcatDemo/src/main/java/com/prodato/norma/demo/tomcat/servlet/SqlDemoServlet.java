@@ -17,11 +17,11 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class SqlDemoServlet extends HttpServlet {
 
-    private static final String DRIVER = "org.hsqldb.jdbc.JDBCDriver";
+    public static final String DRIVER = "org.hsqldb.jdbc.JDBCDriver";
     public static final String URL = "jdbc:hsqldb:http://localhost:8080/TomcatDemo/HSQLDB";
 
-    private static final String USERNAME = "SA";
-    private static final String PASSWORD = "";
+    public static final String USERNAME = "SA";
+    public static final String PASSWORD = "";
 
     private static final String STATEMENT_CREATE_TABLE = "CREATE TABLE t(a INTEGER, b BIGINT)";
     private static final String STATEMENT_INSERT_VALUES = "INSERT INTO t VALUES ?, ?";

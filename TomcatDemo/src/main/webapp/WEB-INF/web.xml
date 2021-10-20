@@ -80,6 +80,17 @@
         <url-pattern>/SqlDemoServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <description>Einfaches Code-Demo für die JPA mit EclipseLink</description>
+        <display-name>JpaDemoServlet</display-name>
+        <servlet-name>JpaDemoServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.JpaDemoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JpaDemoServlet</servlet-name>
+        <url-pattern>/JpaDemoServlet</url-pattern>
+    </servlet-mapping>
+
 
     <!-- ########################################################################################### -->
     <!-- ############### END DATABASE ############################################################## -->

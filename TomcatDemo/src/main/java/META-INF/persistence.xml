@@ -1,0 +1,13 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence persistence_1_0.xsd" version="1.0">
+    <persistence-unit name="hsqlJpaTest" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.hsqldb.jdbc.JDBCDriver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:hsqldb:http://localhost:8080/TomcatDemo/HSQLDB"/>
+            <property name="jakarta.persistence.jdbc.user" value="SA"/>
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+        </properties>
+        <class>com.prodato.norma.demo.tomcat.jpa.demo.Book</class>
+    </persistence-unit>
+</persistence>

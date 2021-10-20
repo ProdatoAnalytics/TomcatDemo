@@ -10,4 +10,7 @@
     <tns:menuitem url="/TomcatDemo/SqlDemoServlet">
     Einfaches Codebeispel für die HsqlDB Datenbank.
   </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/JpaDemoServlet">
+    Einfaches Codebeispel für die JPA mit EclipseLink.
+  </tns:menuitem>
 </tns:menu>
