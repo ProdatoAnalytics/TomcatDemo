@@ -27,6 +27,7 @@ dependencies {
 	// Datenbanksachen
 	implementation group: 'org.hsqldb', name: 'hsqldb', version: '2.6.0'
 	implementation group: 'org.eclipse.persistence', name: 'eclipselink', version: '3.0.2'
+	implementation group: 'org.eclipse.persistence', name: 'org.eclipse.persistence.jpa', version: '3.0.2'
 	
 }
 
