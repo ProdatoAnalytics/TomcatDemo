@@ -34,6 +34,11 @@ dependencies {
 	implementation group: 'org.eclipse.persistence', name: 'eclipselink', version: '3.0.2'
 	implementation group: 'org.eclipse.persistence', name: 'org.eclipse.persistence.jpa', version: '3.0.2'
 	
+    // JSF    
+    implementation group: 'org.apache.myfaces.core', name: 'myfaces-api',  version: '3.0.1'
+    implementation group: 'org.apache.myfaces.core', name: 'myfaces-impl', version: '3.0.1'
+    implementation group: 'org.primefaces', name: 'primefaces', version: '11.0.0-RC1'
+    
 }
 
 sourceSets {
