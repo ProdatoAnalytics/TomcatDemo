@@ -24,6 +24,11 @@ dependencies {
 	// Damit die Tomcat Libraries der Runtime nicht jedes mal manuell mit eingebunden werden müssen.
 	implementation group: 'org.apache.tomcat', name: 'tomcat-catalina', version: '10.0.12'
 	
+	// logging
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core',  version: '2.14.1'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api',   version: '2.14.1'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-jul',   version: '2.14.1' // löst java.util.logging ab
+	
 	// Datenbanksachen
 	implementation group: 'org.hsqldb', name: 'hsqldb', version: '2.6.0'
 	implementation group: 'org.eclipse.persistence', name: 'eclipselink', version: '3.0.2'
