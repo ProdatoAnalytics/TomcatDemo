@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:tips xmlns:tns="http://www.example.org/NewXMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/NewXMLSchema TipsSchema.xsd ">
+    <tns:title>Primefaces</tns:title>
+    <tns:tip>
+        <tns:topic>Jakarta EE 9</tns:topic>
+        <tns:description>Der Classifier in build.gradle bei Primefaces ist notwendig für jakarta-Präfixes.</tns:description>
+        <tns:locations>
+            <tns:location>build.gradle</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>Jakarta EE 9</tns:tag>
+        </tns:tags>
+    </tns:tip>
+
+</tns:tips>
