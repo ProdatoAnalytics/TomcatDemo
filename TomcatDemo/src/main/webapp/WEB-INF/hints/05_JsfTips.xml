@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:tips xmlns:tns="http://www.example.org/NewXMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/NewXMLSchema TipsSchema.xsd ">
+    <tns:title>JSF</tns:title>
+    <tns:description>JSF mit MyFaces</tns:description>
+    <tns:tip>
+        <tns:topic>Context Parameter</tns:topic>
+        <tns:description>Viele einfache JSF-Kontextparameter können gesetzt werden. Manche wurden für das Projekt entfernt.</tns:description>
+        <tns:locations>
+            <tns:location>web.xml</tns:location>
+        </tns:locations>
+    </tns:tip>
+    <tns:tip>
+        <tns:topic>Jakarta EE 9</tns:topic>
+        <tns:description>Ab Tomcat 10 müssen alle eingebundenen Libraries statt javax das paket jakarta includieren. Auf entsprechende Kompaitibilität muss geachtet werden.</tns:description>
+        <tns:locations>
+            <tns:location>build.gradle</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>Jakarta EE 9</tns:tag>
+            <tns:tag>Tomcat</tns:tag>
+            <tns:tag>Primefaces</tns:tag>
+            <tns:tag>Myfaces</tns:tag>
+        </tns:tags>
+    </tns:tip>
+
+</tns:tips>
