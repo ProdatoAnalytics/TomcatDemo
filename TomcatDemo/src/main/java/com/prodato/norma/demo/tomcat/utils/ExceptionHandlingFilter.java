@@ -29,6 +29,7 @@ public class ExceptionHandlingFilter implements Filter {
             chain.doFilter(request, wrapper);
         } catch (final Throwable e) {
             wrapper.getWriter().write(LoggingUtils.buildHtmlStacktrace(e));
+            throw e; // Gehört eigentlich in das Book of Shame!
         } finally {
             final String content = wrapper.toString();
             final PrintWriter responseWriter = response.getWriter();
