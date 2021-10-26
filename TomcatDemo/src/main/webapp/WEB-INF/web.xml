@@ -35,14 +35,15 @@
         <url-pattern>/menu</url-pattern>
     </servlet-mapping>
     
-    <filter>
+    <!-- TODO funktionierte nicht im Database-Branch f76425e -->
+    <!-- <filter>
         <filter-name>ExceptionHandlingFilter</filter-name>
         <filter-class>com.prodato.norma.demo.tomcat.utils.ExceptionHandlingFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>ExceptionHandlingFilter</filter-name>
         <url-pattern>/*</url-pattern>
-    </filter-mapping>
+    </filter-mapping> -->
 
 
     <!-- ########################################################################################### -->
