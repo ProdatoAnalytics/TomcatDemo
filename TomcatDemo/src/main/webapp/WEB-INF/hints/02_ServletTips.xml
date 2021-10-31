@@ -18,5 +18,16 @@
             <tns:location>RedirectionServlet.java</tns:location>
         </tns:locations>
     </tns:tip>
+    <tns:tip>
+        <tns:topic>Listener</tns:topic>
+        <tns:description>Um den Aufruf von Listenern mitverfolgen zu können, in log4j2.xml ContextStartupShutdownLoggingListener auf "debug" setzen.</tns:description>
+        <tns:locations>
+            <tns:location>ContextStartupShutdownLoggingListener.java</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>ContextListener</tns:tag>
+            <tns:tag>RequestListener</tns:tag>
+        </tns:tags>
+    </tns:tip>
 
 </tns:tips>

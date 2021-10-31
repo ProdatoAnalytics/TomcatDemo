@@ -134,6 +134,10 @@
         <filter-name>RedirectionFilter</filter-name>
         <url-pattern>/RedirectionServlet</url-pattern>
     </filter-mapping>
+    
+    <listener>
+        <listener-class>com.prodato.norma.demo.tomcat.servlet.listener.ContextStartupShutdownLoggingListener</listener-class>
+    </listener>
 
     <!-- ########################################################################################### -->
     <!-- ############### END SERVLET ############################################################### -->
