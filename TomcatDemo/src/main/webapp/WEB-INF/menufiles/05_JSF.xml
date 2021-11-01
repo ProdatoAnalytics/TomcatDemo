@@ -10,4 +10,7 @@
     <tns:menuitem url="/TomcatDemo/jsf/CdiSessionBean.xhtml">
     Test für CDI (Ein SessionBean).
   </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/jsf/ui/remove.xhtml">
+    Test für unterschiedliche Möglichkeiten, Code in JSF auszukommentieren.
+  </tns:menuitem>
 </tns:menu>
