@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Remove Test</title>
+</head>
+<body>
+    <h1>Remove Test</h1>
+    <p>Hier kommen einige Tests, wie man Tags und Bereiche auskommentieren kann.</p>
+    <p>Wenn hier irgendwo "auskommentiert" steht, ist der Test gescheitert.</p>
+    <p>Einkommentiert</p>
+    <!-- <p>Auskommentiert</p> -->
+    <p>Einkommentiert</p>
+    <h:outputText rendered="false" value="Auskommentiert" />
+    <p>Einkommentiert</p>
+    <ui:remove>
+        <p>Auskommentiert</p>
+    </ui:remove>
+    <p>Einkommentiert</p>
+    <p jsfc="ui:remove">Auskommentiert</p>
+</body>
+</html>
+
