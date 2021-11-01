@@ -7,4 +7,7 @@
     <tns:menuitem url="/TomcatDemo/jsf/JsfHelloWorld.xhtml">
     Hello World
   </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/jsf/ui/remove.xhtml">
+    Test für unterschiedliche Möglichkeiten, Code in JSF auszukommentieren.
+  </tns:menuitem>
 </tns:menu>

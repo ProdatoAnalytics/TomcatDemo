@@ -24,5 +24,16 @@
             <tns:tag>Myfaces</tns:tag>
         </tns:tags>
     </tns:tip>
+    <tns:tip>
+        <tns:topic>Auskommentieren</tns:topic>
+        <tns:description>Es gibt unterschiedliche Möglichkeiten, in JSF Code auszukommentieren.</tns:description>
+        <tns:locations>
+            <tns:location>remove.xhtml</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>ui:remove</tns:tag>
+            <tns:tag>jsfc</tns:tag>
+        </tns:tags>
+    </tns:tip>
 
 </tns:tips>
