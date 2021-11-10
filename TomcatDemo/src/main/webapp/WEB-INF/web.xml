@@ -34,7 +34,7 @@
         <servlet-name>MenuServlet</servlet-name>
         <url-pattern>/menu</url-pattern>
     </servlet-mapping>
-    
+
     <!-- TODO funktionierte nicht im Database-Branch f76425e -->
     <!-- <filter>
         <filter-name>ExceptionHandlingFilter</filter-name>
@@ -134,9 +134,24 @@
         <filter-name>RedirectionFilter</filter-name>
         <url-pattern>/RedirectionServlet</url-pattern>
     </filter-mapping>
-    
+
     <listener>
         <listener-class>com.prodato.norma.demo.tomcat.servlet.listener.ContextStartupShutdownLoggingListener</listener-class>
+    </listener>
+
+    <servlet>
+        <description>Test von Sessions und deren Lebenszyklus</description>
+        <display-name>SessionLifecycleTestServlet</display-name>
+        <servlet-name>SessionLifecycleTestServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.SessionLifecycleTestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionLifecycleTestServlet</servlet-name>
+        <url-pattern>/SessionLifecycleTestServlet</url-pattern>
+    </servlet-mapping>
+
+    <listener>
+        <listener-class>com.prodato.norma.demo.tomcat.servlet.listener.SessionLifecycleTestListener</listener-class>
     </listener>
 
     <!-- ########################################################################################### -->

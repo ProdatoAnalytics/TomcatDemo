@@ -13,6 +13,7 @@
         
         <!-- Auf DEBUG setzen um Listener in der Konsole mitzuverfolgen -->
         <Logger name="com.prodato.norma.demo.tomcat.servlet.listener.ContextStartupShutdownLoggingListener" level="info" />
+        <Logger name="com.prodato.norma.demo.tomcat.servlet.listener.SessionLifecycleTestListener" level="info" />
         
         <Root level="warn">
             <AppenderRef ref="console" />

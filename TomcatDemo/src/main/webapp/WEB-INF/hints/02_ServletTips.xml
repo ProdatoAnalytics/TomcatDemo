@@ -29,5 +29,30 @@
             <tns:tag>RequestListener</tns:tag>
         </tns:tags>
     </tns:tip>
+    <tns:tip>
+        <tns:topic>Sessions</tns:topic>
+        <tns:description>Um den Aufruf von Listenern mitverfolgen zu können, in log4j2.xml SessionLifecycleTestListener auf "debug" setzen.</tns:description>
+        <tns:locations>
+            <tns:location>SessionLifecycleTestListener.java</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>SessionListener</tns:tag>
+        </tns:tags>
+    </tns:tip>
+    <tns:tip>
+        <tns:topic>Umgang mit Eingabeparametern</tns:topic>
+        <tns:description>Ein und Ausgaben über input und submits in Verbindung mit Sessions.</tns:description>
+        <tns:locations>
+            <tns:location>SessionLifecycleTestServlet.java</tns:location>
+            <tns:location>SessionLifecycleTestListener.java</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>get</tns:tag>
+            <tns:tag>post</tns:tag>
+            <tns:tag>input</tns:tag>
+            <tns:tag>button</tns:tag>
+            <tns:tag>submit</tns:tag>
+        </tns:tags>
+    </tns:tip>
 
 </tns:tips>
