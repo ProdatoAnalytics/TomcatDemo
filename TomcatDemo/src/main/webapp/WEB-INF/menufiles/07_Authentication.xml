@@ -2,9 +2,10 @@
 <tns:menu xmlns:tns="http://www.example.org/NewXMLSchema"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.example.org/NewXMLSchema NewXMLSchema.xsd ">
-    <tns:title>Root</tns:title>
-    <tns:description>Für alle Teilprojekte gemeinsame Menüpunkte</tns:description>
-    <tns:menuitem url="/TomcatDemo/">
-    Hauptseite
+    <tns:title>Authentication</tns:title>
+    <tns:description>Verschiedene Möglichkeiten für Authentication</tns:description>
+    <tns:menuitem
+        url="/TomcatDemo/BasicAuthenticationServlet">
+    BASIC-Authentication
   </tns:menuitem>
 </tns:menu>

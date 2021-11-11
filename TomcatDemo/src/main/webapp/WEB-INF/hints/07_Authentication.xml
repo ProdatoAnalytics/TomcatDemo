@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:tips xmlns:tns="http://www.example.org/NewXMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org/NewXMLSchema TipsSchema.xsd ">
+    <tns:title>Authentication</tns:title>
+    <tns:description>Alles rund um Authentifizierung</tns:description>
+    <tns:tip>
+        <tns:topic>BASIC</tns:topic>
+        <tns:description>Authentifizierung auf einfachstem Niveau mit Demonstration von "Entschlüsselung"</tns:description>
+        <tns:locations>
+            <tns:location>BasicAuthenticationServlet.java</tns:location>
+            <tns:location>tomcat-users.xml</tns:location>
+            <tns:location>http://www.avajava.com/tutorials/lessons/how-do-i-use-basic-authentication-with-tomcat.html?page=1</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>Base64</tns:tag>
+            <tns:tag>BASIC</tns:tag>
+        </tns:tags>
+    </tns:tip>
+
+</tns:tips>

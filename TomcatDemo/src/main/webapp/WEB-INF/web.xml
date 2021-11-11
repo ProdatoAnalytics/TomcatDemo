@@ -34,20 +34,58 @@
         <servlet-name>MenuServlet</servlet-name>
         <url-pattern>/menu</url-pattern>
     </servlet-mapping>
-    
+
     <!-- TODO funktionierte nicht im Database-Branch f76425e -->
-    <!-- <filter>
-        <filter-name>ExceptionHandlingFilter</filter-name>
-        <filter-class>com.prodato.norma.demo.tomcat.utils.ExceptionHandlingFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>ExceptionHandlingFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping> -->
+    <!-- <filter> <filter-name>ExceptionHandlingFilter</filter-name> <filter-class>com.prodato.norma.demo.tomcat.utils.ExceptionHandlingFilter</filter-class> 
+        </filter> <filter-mapping> <filter-name>ExceptionHandlingFilter</filter-name> 
+        <url-pattern>/*</url-pattern> </filter-mapping> -->
 
 
     <!-- ########################################################################################### -->
     <!-- ############### END COMMON ################################################################ -->
+    <!-- ########################################################################################### -->
+
+    <!-- ########################################################################################### -->
+    <!-- ############### BEGIN AUTHENTICATION ###################################################### -->
+    <!-- ########################################################################################### -->
+
+    <servlet>
+        <description>Test für BASIC Authentication</description>
+        <display-name>BasicAuthenticationServlet</display-name>
+        <servlet-name>BasicAuthenticationServlet</servlet-name>
+        <servlet-class>com.prodato.norma.demo.tomcat.servlet.BasicAuthenticationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BasicAuthenticationServlet</servlet-name>
+        <url-pattern>/BasicAuthenticationServlet</url-pattern>
+    </servlet-mapping>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Nur das angegebene Servlet benötigt
+                Authentifizierung</web-resource-name>
+            <url-pattern>/BasicAuthenticationServlet</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>tomcat</role-name> <!-- Siehe tomcat-users.xml -->
+        </auth-constraint>
+
+        <user-data-constraint>
+            <!-- Kann sein: CONFIDENTIAL, INTEGRAL oder NONE -->
+            <!-- NONE reicht aus weil kein SSL vorhanden ist -->
+            <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
+    <login-config>
+        <!-- Das ist ein BASIC-Beispiel -->
+        <auth-method>BASIC</auth-method>
+    </login-config>
+
+    <!-- ########################################################################################### -->
+    <!-- ############### END AUTHENTICATION ######################################################## -->
     <!-- ########################################################################################### -->
 
 </web-app>
