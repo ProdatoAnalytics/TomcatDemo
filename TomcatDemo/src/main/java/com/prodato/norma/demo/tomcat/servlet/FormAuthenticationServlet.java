@@ -3,6 +3,9 @@ package com.prodato.norma.demo.tomcat.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -29,12 +32,25 @@ public class FormAuthenticationServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
+    private static final Logger logger = LogManager.getLogger();
+
     @Override
     protected void doGet(final HttpServletRequest request, final HttpServletResponse response) throws IOException {
-        // Weiterleiten auf eine HTML-Seite
-        final RequestDispatcher rd = request.getRequestDispatcher("html/webcontent/hello.html");
+        logger.debug("FormAuthenticationServlet mit session " + request.getSession().getId());
+        final String logout = request.getParameter("logout");
         try {
-            rd.forward(request, response);
+            if ("true".equals(logout)) {
+                // Ausloggen
+                logger.debug("Logge aus");
+                request.getSession().invalidate();
+                // Über Redirect weiterleiten, damit der Parameter verloren geht und keine Endlosschleif eintritt
+                response.sendRedirect(request.getContextPath() + "/FormAuthenticationServlet");
+            } else {
+                // Weiterleiten auf eine HTML-Seite
+                logger.debug("Erfolgreich angemeldet und leite weiter");
+                final RequestDispatcher rd = request.getRequestDispatcher("html/webcontent/hello.html");
+                rd.forward(request, response);
+            }
         } catch (final ServletException e) {
 
             // TODO Auto-generated catch block
@@ -43,6 +59,7 @@ public class FormAuthenticationServlet extends HttpServlet {
             final PrintWriter out = response.getWriter();
             out.println("<p>Ein Fehler ist aufgreten. Logs anschauen!");
         }
+
     }
 
 }
