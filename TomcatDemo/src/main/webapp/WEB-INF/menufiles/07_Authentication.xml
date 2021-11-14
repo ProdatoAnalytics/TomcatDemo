@@ -6,6 +6,10 @@
     <tns:description>Verschiedene Möglichkeiten für Authentication</tns:description>
     <tns:menuitem
         url="/TomcatDemo/BasicAuthenticationServlet">
-    BASIC-Authentication
+    BASIC-Authentication (in web.xml einblenden!)
+  </tns:menuitem>
+    <tns:menuitem
+        url="/TomcatDemo/FormAuthenticationServlet">
+    FORM-Authentication (in web.xml einblenden!)
   </tns:menuitem>
 </tns:menu>

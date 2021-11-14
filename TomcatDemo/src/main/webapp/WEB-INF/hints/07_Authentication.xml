@@ -17,5 +17,18 @@
             <tns:tag>BASIC</tns:tag>
         </tns:tags>
     </tns:tip>
+    <tns:tip>
+        <tns:topic>FORM</tns:topic>
+        <tns:description>Authentifizierung immerhin über eine Form-Seite.</tns:description>
+        <tns:locations>
+            <tns:location>FormAuthenticationServlet.java</tns:location>
+            <tns:location>forward</tns:location>
+            <tns:location>http://www.avajava.com/tutorials/lessons/how-do-i-use-form-authentication-with-tomcat.html</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>forward</tns:tag>
+            <tns:tag>FORM</tns:tag>
+        </tns:tags>
+    </tns:tip>
 
 </tns:tips>
