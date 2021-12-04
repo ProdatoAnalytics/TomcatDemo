@@ -7,4 +7,7 @@
     <tns:menuitem url="/TomcatDemo/primefaces/PrimefacesHelloWorld.xhtml">
     Hello World
   </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/primefaces/buttonInSelectOneListbox.xhtml">
+    Button in SelectOneListbox (fehlgeschlagen)
+  </tns:menuitem>
 </tns:menu>
