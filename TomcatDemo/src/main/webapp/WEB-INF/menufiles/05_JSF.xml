@@ -7,4 +7,7 @@
     <tns:menuitem url="/TomcatDemo/jsf/JsfHelloWorld.xhtml">
     Hello World
   </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/jsf/CdiSessionBean.xhtml">
+    Test für CDI (Ein SessionBean).
+  </tns:menuitem>
 </tns:menu>

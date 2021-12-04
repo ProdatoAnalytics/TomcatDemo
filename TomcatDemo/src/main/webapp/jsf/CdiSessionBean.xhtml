@@ -1,0 +1,15 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CDI Session Bean Test</title>
+</head>
+<body>
+    <h1>CDI Session Bean Test</h1>
+    <h:form>
+        <p>
+            <h:outputText value="Aktueller Wert: #{cdiSessionBeanModel.someValue}" />
+        </p>
+        <h:commandButton value="+1" action="#{cdiSessionBeanModel.plusOneAction}" />
+    </h:form>
+</body>
+</html>

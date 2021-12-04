@@ -35,6 +35,11 @@
         <url-pattern>/menu</url-pattern>
     </servlet-mapping>
     
+    <!-- CDI aktivieren damit Scoped Beans erkannt werden -->
+    <listener>
+        <listener-class>org.apache.webbeans.servlet.WebBeansConfigurationListener</listener-class>
+    </listener>
+    
     <!-- TODO funktionierte nicht im Database-Branch f76425e -->
     <!-- <filter>
         <filter-name>ExceptionHandlingFilter</filter-name>

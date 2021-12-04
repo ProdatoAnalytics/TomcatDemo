@@ -41,6 +41,16 @@ dependencies {
     // Primefaces
     implementation group: 'org.primefaces', name: 'primefaces', version: '11.0.0-RC1', classifier: 'jakarta'
     
+    // CDI
+    implementation group: 'jakarta.enterprise', name: 'jakarta.enterprise.cdi-api', version: '3.0.0' // Für Session Beans
+    implementation group: 'org.apache.openwebbeans', name: 'openwebbeans-spi', version: '2.0.23', classifier: 'jakarta'
+    implementation group: 'org.apache.openwebbeans', name: 'openwebbeans-web', version: '2.0.23', classifier: 'jakarta'
+    implementation group: 'org.apache.openwebbeans', name: 'openwebbeans-impl', version: '2.0.23', classifier: 'jakarta'
+    implementation group: 'org.apache.openwebbeans', name: 'openwebbeans-jsf', version: '2.0.23', classifier: 'jakarta'
+    implementation group: 'org.apache.openwebbeans', name: 'openwebbeans-el22', version: '2.0.23', classifier: 'jakarta' // automatische dependency, explizit angegeben wegen jakarta classifier
+    
+    implementation group: 'jakarta.servlet.jsp.jstl', name: 'jakarta.servlet.jsp.jstl-api', version: '2.0.0' // Um Fehlermeldung zu vermeiden
+    
 }
 
 sourceSets {
