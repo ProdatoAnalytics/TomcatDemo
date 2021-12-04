@@ -41,6 +41,28 @@ dependencies {
     // Primefaces
     implementation group: 'org.primefaces', name: 'primefaces', version: '11.0.0-RC1', classifier: 'jakarta'
     
+    // CDI
+    // Excludes sind in der Übergangszeit notwendig: Die Dependencies sind noch javax, nicht jakarta
+    implementation group: 'jakarta.enterprise', name: 'jakarta.enterprise.cdi-api', version: '3.0.0' // Für Session Beans
+    implementation ('org.apache.openwebbeans:openwebbeans-jsf:2.0.27:jakarta') {
+	    exclude group: 'org.apache.openwebbeans', module: 'openwebbeans-spi'
+	    exclude group: 'org.apache.openwebbeans', module: 'openwebbeans-web'
+	    exclude group: 'org.apache.openwebbeans', module: 'openwebbeans-impl'
+	    exclude group: 'org.apache.openwebbeans', module: 'openwebbeans-el22'
+    }
+    implementation ('org.apache.openwebbeans:openwebbeans-web:2.0.27:jakarta') {
+	    exclude group: 'org.apache.openwebbeans', module: 'openwebbeans-spi'
+	    exclude group: 'org.apache.openwebbeans', module: 'openwebbeans-impl'
+	    exclude group: 'org.apache.openwebbeans', module: 'openwebbeans-el22'
+    }
+    implementation ('org.apache.openwebbeans:openwebbeans-el22:2.0.27:jakarta')
+    implementation ('org.apache.openwebbeans:openwebbeans-impl:2.0.27:jakarta') {
+	    exclude group: 'org.apache.openwebbeans', module: 'openwebbeans-spi'
+    }
+    implementation ('org.apache.openwebbeans:openwebbeans-spi:2.0.27:jakarta')
+    
+    implementation group: 'jakarta.servlet.jsp.jstl', name: 'jakarta.servlet.jsp.jstl-api', version: '2.0.0' // Um Fehlermeldung zu vermeiden
+    
 }
 
 sourceSets {
