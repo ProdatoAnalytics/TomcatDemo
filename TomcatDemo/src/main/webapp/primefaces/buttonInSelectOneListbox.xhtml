@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui" xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Test für SelectOneListbox</title>
+</h:head>
+<body>
+    <h1>Test für SelectOneListbox</h1>
+    <div class="card">
+        <h:form id="idForm">
+            <p:selectOneListbox value="#{buttonInSelectOneListboxModel.selectedValue}" var="entry" converter="listEntryConverter" valueChangeListener="#{buttonInSelectOneListboxModel.valueChanged}" binding="#{buttonInSelectOneListboxModel.listBox}" >
+                <f:selectItems value="#{buttonInSelectOneListboxModel.entries}" />
+                <p:ajax event="valueChange" process="@this" update="idForm" />
+                <p:column>
+                    <h:outputText value="#{entry.label}">
+                    </h:outputText>
+                </p:column>
+                <p:column style="width:15px;">
+                    <p:commandButton id="rowButton" value="Addiere" actionListener="#{buttonInSelectOneListboxModel.rowAction}" />
+                </p:column>
+            </p:selectOneListbox>
+
+            <p><h:commandButton value="Zeige Wert" action="#{buttonInSelectOneListboxModel.generalAction}" /></p>
+            <p><h:outputText value="Ausgewählt: #{buttonInSelectOneListboxModel.selectionStringValue}" /></p>
+            <p><h:outputText value="Summe: #{buttonInSelectOneListboxModel.sumValue}" /></p>
+        </h:form>
+    </div>
+</body>
+</html>
