@@ -24,5 +24,17 @@
             <tns:tag>Myfaces</tns:tag>
         </tns:tags>
     </tns:tip>
+    <tns:tip>
+        <tns:topic>PhaseListener</tns:topic>
+        <tns:description>Mit einem PhaseListener können die Phasen von Aktionen überwacht werden.</tns:description>
+        <tns:locations>
+            <tns:location>DebugPhaseListener</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>PhaseListener</tns:tag>
+            <tns:tag>log4j</tns:tag>
+            <tns:tag>faces-context.xml</tns:tag>
+        </tns:tags>
+    </tns:tip>
 
 </tns:tips>
