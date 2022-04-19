@@ -1,6 +1,7 @@
 plugins {
     id 'eclipse'
     id 'java'
+	id 'war'
 }
 
 repositories {
@@ -54,4 +55,15 @@ sourceSets {
     }
 }
 
+task war1(type:War) {
+    archiveName = 'TomcatDemo1.war'
+}
+
+task war2(type:War) {
+    archiveName = 'TomcatDemo2.war'
+}
+
+task allWars(type:War, dependsOn: ['war1', 'war2']) {
+	println "Kompiliere 2 Wars: TomcatDemo1 und TomcatDemo2"
+}
 
