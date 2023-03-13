@@ -30,11 +30,13 @@
     </tns:tip>
     <tns:tip>
         <tns:topic>XSLT</tns:topic>
-        <tns:description>Transformation von XML-Dateien mittels XSLT. Ausgewertet wird über Java.</tns:description>
+        <tns:description>Transformation von XML-Dateien mittels XSLT. Ausgewertet wird über Java oder direkt durch den Browser.</tns:description>
         <tns:locations>
             <tns:location>TipsSchema.xsd</tns:location>
             <tns:location>TipsSchema.xsl</tns:location>
             <tns:location>01_RootTips.xml</tns:location>
+            <tns:location>kochrezept/index.xml</tns:location>
+            <tns:location>kochrezept/index.xsl</tns:location>
         </tns:locations>
         <tns:tags>
             <tns:tag>XSLT</tns:tag>

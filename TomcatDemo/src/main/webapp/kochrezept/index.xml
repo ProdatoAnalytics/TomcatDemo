@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+
+<?xml-stylesheet type="text/xsl" href="kochrezept.xsl" ?>
+<!DOCTYPE MAIN SYSTEM "kochrezept.dtd">
+
+<MAIN title="Michaels Mitschriften und Kochrezepte" buttons="./Buttons/" images="./Images/">
+
+   <KOMMENTARE>
+      <KOMMENTAR>
+      Hallo! 
+      </KOMMENTAR>
+      <KOMMENTAR>
+      Hier möchte ich im Laufe der nächsten Wochen eine Sammlung für Mitschriften und kurze
+      Notizen für die zweite Hälfte Vordiplomsprüfung aufbauen.
+      </KOMMENTAR>
+      <KOMMENTAR>
+      Für Kommentare / Korrekturen bin ich erreichbar unter 
+      <LINK href="mailto:m_lehmeier@gmx.de">m_lehmeier@gmx.de</LINK>.
+      </KOMMENTAR>
+      <KOMMENTAR>
+      Die Mitschriften der Übungen in TI3 und WS1 werden nur eine Zeit lang
+      erreichbar sein, bis mir der Platz ausgeht. Wer sie danach noch braucht
+      soll mich anmailen.
+      </KOMMENTAR>
+   </KOMMENTARE>
+
+	<INHALT>
+		<INHALTEINTRAG link="tagebuch">
+			Tagebuch
+		</INHALTEINTRAG>
+		<INHALTEINTRAG link="m12">
+			Mathe 1 und 2
+		</INHALTEINTRAG>
+		<INHALTEINTRAG link="m3">
+			Mathe 3
+		</INHALTEINTRAG>
+		<INHALTEINTRAG link="wr1">
+			Wahrscheinlichkeitsrechnung 1
+		</INHALTEINTRAG>
+		<INHALTEINTRAG link="ti1">
+			Theoretische Informatik 1
+		</INHALTEINTRAG>
+		<INHALTEINTRAG link="ti2">
+			Theoretische Informatik 2
+		</INHALTEINTRAG>
+		<INHALTEINTRAG link="ti3">
+			Theoretische Informatik 3
+		</INHALTEINTRAG>
+		<INHALTEINTRAG link="quellen">
+			Quellen
+		</INHALTEINTRAG>
+	</INHALT>
+
+   <TAGEBUCH linkid="tagebuch">
+      <EINTRAG datum="1. April 2005">
+         <ZEILE>
+            Über die TI-Klausur möchte ich mich nicht äußern. Zumindest nicht, bis ich das Ergebnis habe. Und das will ich gar nicht habe, bis Mathe vorüber ist.
+         </ZEILE>
+         <ZEILE>
+            Daß es kein Update hier gegeben hat, liegt vor allem daran, daß ich viel Zeit mit Übungen verbracht habe und die Stofffülle schlicht nicht so groß war. Allerdings ist mir später aufgefallen, daß vor allem im Mathe 3 Teil meine Zettel zu wünschen übrig ließen. Deshalb habe ich nach meinem ersten Übungsdurchlauf damit begonnen, sie noch mal zu schreiben. Deshalb auch erst das späte Update. Wahrscheinlichkeitsrechnung habe ich jetzt viel mehr kapiert, aber an den Zetteln hat das nichts geändert. Deshalb keine Neuerungen hier.
+         </ZEILE>
+         <ZEILE>
+            Aber wie gesagt, ich habe das gesamte Mathe 3 ausgetauscht. Viel Spaß!
+         </ZEILE>
+      </EINTRAG>
+      <EINTRAG datum="7. März 2005">
+         <ZEILE>
+            Letztes Update.
+         </ZEILE>
+         <ZEILE>
+            Bitte schaut euch Insertionsort an. Ich habe keine Ahnung wie das passieren konnte, aber die bisherige Methode ist nicht richtig!
+         </ZEILE>
+      </EINTRAG>
+      <EINTRAG datum="3. März 2005">
+         <ZEILE>
+            Allzuviel kommt nicht mehr dazu. Ich bin jetzt aber mit TI2 durch.
+         </ZEILE>
+         <ZEILE>
+            Lücken sind geblieben. Den Bereich Termalgebren habe ich vollkommen weggelassen, da mir hier das Skript doch ab dem 2. Drittel etwas konfus schien und auch teilweise widersprüchlich. Jedenfalls sehe ich nicht, wie man hier groß sich auf Klausuraufgaben vorbereiten kann.
+         </ZEILE>
+      </EINTRAG>
+     <EINTRAG datum="23. Februar 2005">
+         <ZEILE>
+            Ich habe meinen Lernstoff vor allem auf Karteikarten verlegt, die ich (noch?) nicht einscanne. Deshalb weiterhin wenig Zettel.
+         </ZEILE>
+         <ZEILE>
+            TI1 betrachte ich jetzt als abgeschlossen. Die nächste Woche hoffe ich mit TI2 durchzukommen. Mal sehen wie ich dann dastehe.
+         </ZEILE>
+      </EINTRAG>
+      <EINTRAG datum="10. Februar 2005">
+         <ZEILE>
+            Leider sind die Prüfungen für mich nicht positiv ausgeganen, deshalb führe ich diese Seite jetzt weiter.
+         </ZEILE>
+         <ZEILE>
+            Es kommen viele neue Blätter hinzu, aber ich habe auch viele überarbeitet. Entweder weil ich jetzt mehr darüber weiß oder weil sie nicht mehr gut genug sind. Ein paar hatten auch haarsträubende Fehler, aber die Gefahr besteht nun mal immer.
+         </ZEILE>
+      </EINTRAG>
+   </TAGEBUCH>
+
+   <FAECHER>
+      <FACH name="Mathematik 1-2" linkid="m12">
+         <KAPITEL name="Lineare Algebra">
+            <BLATT link="lgs_tricks.gif" name="Tricks mit linearen Gleichungssystemen" rang="gruen">
+               Hat mit Gauss-Eliminiation zu tun.
+            </BLATT>
+            <BLATT link="horner_schema.gif" name="Horner Schema" rang="gruen">
+               Zur schnellen Ausrechnung von linearen Gleichungssystemen
+            </BLATT>
+            <BLATT link="komplexe_zahlen.gif" name="Komplexe Zahlen" rang="gruen">
+               Kann man viel damit machen, aber für uns ist das jetzt nicht so wichtig. Gut, wenn man aber nachschlagen kann.
+            </BLATT>
+            <BLATT link="vektorrechnung.gif" name="Vektorrechnung" rang="gelb">
+               In Mathe 3 ziemlich wichtig. Sollte man aber schon können.
+            </BLATT>
+            <BLATT link="matrizen.gif" name="Matrizen" rang="gruen">
+               Ist recht wichtig, aber Grundwissen und nur mäßig interessant für zweite Hälfte Vordiplom.
+            </BLATT>
+            <BLATT link="determinanten.gif" name="Determinanten" rang="gelb">
+               Grundwissen, wird auch in Mathe 3 gebraucht.
+            </BLATT>
+            <BLATT link="eigenwerte.gif" name="Eigenwerte und Eigenvektoren" rang="gelb">
+               Sind bei Differentialgleichungen wichtig.
+            </BLATT>
+            <BLATT link="limes.gif" name="Limes mit l'Hospital" rang="gruen">
+               Keine Ahnung in wie weit das wichtig wäre.
+            </BLATT>
+            <BLATT link="limes_polynombruechen.gif" name="Limes von Polynombrüchen" rang="gruen">
+               Eine kleine Ergänzung zum anderen Limes-Blatt
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Differentialrechnung">
+            <BLATT link="differenzieren.gif" name="Differenzieren" rang="rot">
+               Die wichtigen Regeln kurzgefasst.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Rüstzeug für Integralrechnung">
+            <BLATT link="polynomdivision.gif" name="Polynomdivision" rang="gruen">
+               Braucht man für Partialbruchzerlegung.
+            </BLATT>
+            <BLATT link="partialbruchzerlegung.gif" name="Partialbruchzerlegung" rang="gruen">
+               So zerhackt man kompliziertere Polynome in leichter zu integrierende Teilstücke. Leider sehr zeitaufwändig.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Integralrechnung">
+            <BLATT link="integrieren.gif" name="Integrieren" rang="rot">
+               Die einfachen Integrationsregeln ohne Substitution
+            </BLATT>
+            <BLATT link="integral_vorgehensweise.gif" name="Vorgehensweise bei Integralrechnung" rang="rot">
+               So gehe ich immer vor! Bei jeder Integration.
+            </BLATT>
+            <BLATT link="substitution.gif" name="Integration durch Substitution" rang="rot">
+               Sehr Wichtig! Muß man immer zumindest im Hinterkopf haben. Vorher hatte ich die Wichtigkeit unterschätzt, jetzt nicht mehr.
+            </BLATT>
+            <BLATT link="partielle_integration.gif" name="Partielle Integration" rang="gelb">
+               Kann leider nicht sehr oft verwendet werden und dann gibt es oft sehr hässliche Ergebnisse. Aber manchmal der letzte Notnagel.
+            </BLATT>
+            <BLATT link="bestimmte_integrale.gif" name="Bestimmte Integrale" rang="gelb">
+               Ist oft der letzte Schritt. Ist aber einfach und leicht zu merken.
+            </BLATT>
+         </KAPITEL>
+      </FACH>
+   
+      <FACH name="Mathematik 3" linkid="m3">
+         <KAPITEL name="Mehrdimensionale Differenzialrechnung">
+            <BLATT link="2_01_Richtungsableitung.gif" name="Richtungsableitung" rang="grau" status="neu">
+               Es gibt mehrere Arten, die zu ermitteln. Im Zweifelsfall bei der einfachsten bleiben und den Gradient ermitteln.
+            </BLATT>
+            <BLATT link="2_02_StetigkeitRn.gif" name="Stetigkeit" rang="grau" status="neu">
+               Was ist zu tun, wenn man die Stetigkeit in einer mehrdimensionalen Funktion an einem Punkt feststellen will.
+            </BLATT>
+            <BLATT link="2_03_KritischePunkte.gif" name="Kritische Punkte aufspüren" rang="grau" status="neu">
+               Wo können Minima/Maxima liegen? Dort wo die Steigung 0 ist.
+            </BLATT>
+            <BLATT link="2_04_KritischePunkteUntersuchen.gif" name="Kritische Punkte untersuchen" rang="grau" status="neu">
+               Außschließen, daß es sich um einen Sattelpunkt handelt. Geht nicht immer, leider.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Kurven">
+            <BLATT link="2_05_KurvenSchnittwinkel.gif" name="Schnittwinkel von Kurven" rang="grau" status="neu">
+               Man hat zwei Kurfen die sich schneiden. Mit welchem Winkel?
+            </BLATT>
+            <BLATT link="2_06_Bogenlaenge.gif" name="Bogenlänge einer Kurve" rang="grau" status="neu">
+               Wie lange ist ein bestimmter Abschnitt einer Kurve?
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Differentialrechnung Rn->Rm">
+            <BLATT link="2_07_DifferentiationRnRm.gif" name="Differentialrechnung von Rn nach Rm" rang="grau" status="neu">
+               Enthält unter anderem die Jacobi-Matrix.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Mehrdimensionale Integration">
+            <BLATT link="2_08_IntegrationRn.gif" name="Integration" rang="grau" status="neu">
+               Nicht so schwer, wenn man mal durchblicht. Vor allem die Integrationssbereiche sind wichtig. Da darf man nicht durcheinanderkommen.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Differentialgleichungen 1. Ordnung">
+            <BLATT link="2_09_PicardLindeloef.gif" name="Picard Lindelöf" rang="grau" status="neu">
+               Ein Näherungsverfahren, um eine Differentialgleichung auszurechnen.
+            </BLATT>
+            <BLATT link="2_10_GetrennteVariablen.gif" name="Getrennte Variablen" rang="grau" status="neu">
+               DGLs mit dem Aufbau g(y)f(x)
+            </BLATT>
+            <BLATT link="2_11_DGLDurchSubstitution.gif" name="Substitution in Differentialgleichungen" rang="grau" status="neu">
+               Manchmal kann man eine DGL so in eine besser lösbare Form bringen.
+            </BLATT>
+            <BLATT link="2_12_LineareDGL1Ordnung.gif" name="Lineare DGL 1.Ordnung" rang="grau" status="neu">
+               DGL der Form f(x)y+b(x)
+            </BLATT>
+            <BLATT link="2_13_Anfangswertaufgabe.gif" name="Anfangswertaufgabe" rang="grau" status="neu">
+               Schritt- für Schritt Beschreibung, wie man eine Anfangswertaufgabe löst. Zur Wiederholung.
+            </BLATT>
+            <BLATT link="2_14_DGLProbe.gif" name="Probe einer DGL-Lösung" rang="grau" status="neu">
+               Wie führt man eine Probe durch? Für DGL 1.Ordnung und für ein DGL-System.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Differentialgleichungssysteme">
+            <BLATT link="2_15_DGLSystem.gif" name="DGL in DGL-System umwandeln" rang="grau" status="neu">
+               Das ist nötig, wenn man sich an DGL n-ter Ordnung heranwagen will. Eigentlich nicht schwer, aber ich habe schon Leichtsinnsfehler gemacht.
+            </BLATT>
+            <BLATT link="2_16_InhomogenDGLSystem.gif" name="Inhomogenes DGL-System" rang="grau" status="neu">
+               So löst man eine inhomogene DGL unter der Bedingung, daß man schon eine Lösung kennt.
+            </BLATT>
+            <BLATT link="2_17_DGLSystemKonstKoeff.gif" name="Differentialgleichungen mit konstanten Koeffizienten" rang="grau" status="neu">
+               Die sind immer und relativ leicht zu lösen. Sogar über Tabellen, aber wir wollen hier etwas anderes.
+            </BLATT>
+         </KAPITEL>
+      </FACH>
+   
+   
+      <FACH name="Wahrscheinlichkeitsrechnung 1" linkid="wr1">
+         <KAPITEL name="Mitschriften und Grundlagen">
+            <BLATT link="w1ueb.tar" name="Mitschrift Übungen" rang="grau">
+               Alle Mitschriften zu den Übungen in Wahrscheinlichkeitsrechnung I 2004.
+            </BLATT>
+            <BLATT link="aufloesung_von_summen.gif" name="Regeln zur Auflösung von Summen" rang="grau">
+            Kann sowohl in TI3 als auch Wahrscheinlichkeitsrechnung wichtig werden. Auf das muß man hinarbeiten, damit Summen verschwinden!
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Wahrscheinlichkeitsräume / Laplace">
+            <BLATT link="ereignis_ergebnis.gif" name="Ereignisse und Ergebnisse" rang="gelb">
+               Einige Grundbegriffe zur Erinnerung.
+            </BLATT>
+            <BLATT link="mehrfeldtafel.gif" name="Mehrfeldtafel" rang="gruen">
+               Eine kurze Anleitung, wie man bei gemischten Angaben Zeit spart.
+            </BLATT>
+            <BLATT link="wahrscheinlichkeiten.gif" name="Wahrscheinlichkeiten" rang="gruen">
+            Einige Grundbegriffe und Rechenregeln
+            </BLATT>
+            <BLATT link="ereignis_eigenschaften.gif" name="Eigenschaften von Ergeignissen" rang="gelb">
+            Detaillierte Beschreibung des wichtigen Begriffes. Auch von Mengenalgebra.
+            </BLATT>
+            <BLATT link="sigma_algebra_wahrscheinlichkeitsraum.gif" name="Sigma-Algebra und Wahrscheinlichkeitsräume" rang="gelb">
+            Für mich waren die Begriffe nur schwer zu fassen, deshalb eine zusammenschrift.
+            </BLATT>
+            <BLATT link="laplace.gif" name="Laplace-Experimente" rang="gruen">
+            Primitiv. Aber was man daraus machen kann, kann ich auf einer Seite nicht beschreiben.
+            </BLATT>
+            <BLATT link="binomialkoeffizienten.gif" name="Binomialkoeffizienten" rang="gelb">
+            Eigentlich Grundwissen, aber aus der Pistole geschossen kommte das bei mir immer noch nicht. Dazu eine (möglicherweise falsche) Interpretation des Galton-Brett Experiments.
+            </BLATT>
+            <BLATT link="urnenmodell.gif" name="Urnenmodell" rang="gruen">
+            Nur eine lächerlich einfache Einführung. Wird später noch anders behandelt.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Bedingte Wahrscheinlichkeiten / Stochastische Unabhängigkeit">
+            <BLATT link="bedingte_wahrscheinlichkeit.gif" name="Bedingte Wahrscheinlichkeit" rang="rot">
+            Wenn man von der Vorklausur ausgeht, kann das durchaus wichtig werden. Ist auch nicht so schwer.
+            </BLATT>
+            <BLATT link="rechenregeln_bed_wahrsch.gif" name="Rechenregeln für bedingte Wahrscheinlichkeiten" rang="gelb">
+               Einige Regeln mehr als im Zettel davor.
+            </BLATT>
+            <BLATT link="stochastische_unabhoengigkeit.gif" name="Stochastische Unabhängigkeit" rang="gelb">
+            Woran erkennt man sie? Was bedeutet das für einen?
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Diskrete Wahrscheinlichkeitsräume / Verteilungen">
+            <BLATT link="diskrete_verteilungen.gif" name="Diskrete Verteilungen" rang="gelb">
+            Erläuterung des Grundbegriffes. Möglicherweise nicht vollständig.
+            </BLATT>
+            <BLATT link="verteilungen_uebersicht.gif" name="Übersicht über die diskreten Verteilungen" rang="gelb">
+               Alles auf einem Blatt. Für die ersten Fragen der Klausur oft sehr sinnvoll.
+            </BLATT>
+            <BLATT link="verteilung_laplace.gif" name="Verteilung: Laplace" rang="gruen">
+            Einfach, nur kurze Wiederholung
+            </BLATT>
+            <BLATT link="verteilung_hypergeometrisch.gif" name="Verteilung: Hypergeometrisch" rang="gelb">
+            Schon wichtiger. Siehe Urnenmodell.
+            </BLATT>
+            <BLATT link="verteilung_binomial.gif" name="Verteilung: Binomial" rang="gelb">
+            Noch wichtiger.
+            </BLATT>
+            <BLATT link="verteilung_geometrisch.gif" name="Verteilung: Geometrisch" rang="gelb">
+            Bin mir nicht sicher, wie wichtig die wirklich ist, zusammen mit der Poisson-Verteilung aber recht interessant.
+            </BLATT>
+            <BLATT link="verteilung_poisson.gif" name="Verteilung: Possion" rang="gelb">
+            Also nach dem Skript habe ich das nicht kapiert. Aber über ein anderes Buch und das Internet ging es dann doch.
+            </BLATT>
+            <BLATT link="mittelwert_moment.gif" name="Mittelwert / Moment" rang="rot">
+            Wird später noch sehr wichtig, zusammen mit Varianz. Ist wichtig für Statistik und Poisson.
+            </BLATT>
+            <BLATT link="varianz_tschebyscheff.gif" name="Varianz / Tschebyscheff" rang="rot">
+            Auch sehr wichtig! Wobei ich noch nicht so sehr weiß, wozu das zweite Moment augenscheinlich ist. In Schulmathematik kommt das schon nicht mehr vor.
+            </BLATT>
+            <BLATT link="erzeugend_verteilung.gif" name="Erzeugendenfunktion in Verteilung umwandeln" rang="gelb">
+               Ich weiß noch nicht, worum es eigentlich geht, aber zumindest die eine Richtung in der Aufgabenstellung kann ich jetzt rechnen.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Zufallsvariablen und andere Grundbegriffe">
+            <BLATT link="zufallsvariable.gif" name="Zufallsvariable" rang="gelb">
+               Erklärung des Grundbegriffes. Dauerte ein wenig aber jetzt denke ich, daß ich ihn kapiert habe.
+            </BLATT>
+            <BLATT link="wahrscheinlichkeits_funktion.gif" name="Wahrscheinlichkeitsfunktion" rang="gelb">
+               Dieses Blatt unter Vorbehalt, es gibt Symbolwirrwar im Skript zwischen diskreten und stetigen Verteilungen.
+            </BLATT>
+            <BLATT link="verteilungsfunktion.gif" name="Verteilungsfunktion" rang="gelb">
+               Hatte ich früher mit Wahrscheinlichkeitsfunktion verwechselt. Ist nicht das Selbe.
+            </BLATT>
+            <BLATT link="wahrscheinlichkeits_dichte.gif" name="Dichte" rang="gelb">
+               DER Grundbegriff für die Wahrscheinlichkeitsrechnung mit kontinuierlichen Verteilungen.
+            </BLATT>
+            <BLATT link="kontinuierliche_verteilungen.gif" name="Kontinuierliche Verteilungen" rang="rot">
+               So oder so, die kommen immer dran. Deshalb ist es gut, sie mal in einer Übersicht zu haben. Mit Erwartungswert und Varianz.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Rechnen mit Dichte">
+            <BLATT link="stochastische_unabhaengigkeit_zweier_zufallsvariablen.gif" name="Stochastische Unabhängigkeit zweier Zufallsvariablen" rang="gruen">
+               Eigentlich nur eine Regel. Die schnellere habe ich noch nicht kapiert.
+            </BLATT>
+            <BLATT link="marginaldichten.gif" name="Marginaldichten" rang="rot">
+               Kann explizit gefragt werden, hilft aber auch in anderer Hinsicht um mehrdimensionale Integration zu üben.
+            </BLATT>
+            <BLATT link="komposition.gif" name="Komposition" rang="gruen">
+               Etwas begriffliche Grundlage für die Dichtetransformation.
+            </BLATT>
+            <BLATT link="dichtetransformation.gif" name="Dichtetransformation" rang="rot">
+               Wohl das wichtigste Blatt! Kommt jedes mal dran, man muß nur stur Punkt für Punkt durchgehen.
+            </BLATT>
+            <BLATT link="bedingung_dichtetransformation.gif" name="Bedingungen für die Dichtetransformation" rang="gruen">
+               Nicht immer kann man den Dichtetransformationssatz verwenden. Allerdings habe ich eine Bedingung noch nicht ganz kapiert und wenn es nicht zutrifft, kann ich eh kaum was machen.
+            </BLATT>
+            <BLATT link="polynom_dichtetransformation.gif" name="Polynom-Dichtetransformation" rang="gelb">
+               Eine andere Herangehensweise an Dichtetransformation, oft einfacher. Auf jeden Fall merken.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Erwartungswert, Varianz und Covarianz">
+            <BLATT link="momente_erwartung_varianz.gif" name="Momente, Erwartung, Varianz" rang="gelb">
+               Die Begriffe und wie sie berechnet werden. Auf die altmodische Art, nicht mit den Hilfsmitteln Varianz und Covarianz.
+            </BLATT>
+            <BLATT link="covarianz.gif" name="Kovarianz ausrechnen" rang="rot">
+               Hier wird auch die Varianz gleich miterklärt. Das geht alls Hand in Hand.
+            </BLATT>
+            <BLATT link="covarianzmatrix.gif" name="Kovarianzmatrix" rang="gelb">
+               Die Kovarianzmatrix. Mehr ist nicht zu sagen.
+            </BLATT>
+         </KAPITEL>
+      </FACH>
+   
+   
+      <FACH name="Theoretische Informatik 1" linkid="ti1">
+         <KAPITEL name="Allgemeines">
+            <BLATT link="vollstaendige_induktion.gif" name="Vollständige Induktion" rang="rot">
+               Wichtigstes Beweisprinzip. Sollte jeder Informatiker beherrschen.
+            </BLATT>
+            <BLATT link="sprachen.gif" name="Sprachen" rang="gelb">
+               Natürlich, ist wichtig, sollte aber Allgemeinwissen sein. Ausformulierung von Schreibweisen.
+            </BLATT>
+            <BLATT link="chromsky_hierarchie.gif" name="Die Chromski Hierarchie" rang="rot">
+               Immer unter dem Bett aufbewahren! Darauf baut ganz TheoInf1 auf.
+            </BLATT>
+            <BLATT link="entscheidbarkeit.gif" name="Entscheidbarkeit" rang="gruen">
+               Was kann man über die Sprachen aussagen? In Herleitungen vielleicht brauchbar, sonst aber nicht.
+            </BLATT>
+            <BLATT link="abgeschlossenheit.gif" name="Abgeschlossenheit" rang="gelb">
+               Wenn ich mich nicht irre, kann man damit bei der Frage, zu welchem Typ eine Sprache gehört, Punkte machen. Komplement fehlt noch.
+            </BLATT>
+            <BLATT link="sprachenzugehoerigkeit.gif" name="Sprachenzugehörigkeit" rang="rot">
+               Ich wünschte, ich könnte mehr darüber schreiben, aber es ist ein schwieriges Thema an manchen stellen.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Reguläre Sprachen">
+            <BLATT link="regulaere_sprache.gif" name="Reguläre Sprachen und Automaten" rang="gelb">
+               Zusammenfassung der Darstellungsmöglichkeiten einer regulären Sprache.
+            </BLATT>
+            <BLATT link="nichtdeterm_in_determ_automat.gif" name="Nichtdeterminante in Determinante Automaten umwandeln" rang="gruen">
+               Schöne Aufgabe, und schreit förmlich Prüfungsaufgabe. Aber so was ähnliches kam noch nie dran.
+            </BLATT>
+            <BLATT link="nfa_dfa_einfacher.gif" name="Einfachere Version zur Erstellung Determinanter automaten" rang="gelb">
+               Das Blatt oben war zu kompliziert. Es geht auch viel schneller.
+            </BLATT>
+            <BLATT link="pumping_lemma.gif" name="Pumping Lemma" rang="rot">
+               Kommt sicher dran, wichtig, üben!
+            </BLATT>
+            <BLATT link="pumplemma_herleitung.gif" name="Herleitung des Pumplemmas" rang="gelb">
+               Nach Ewigkeiten habe ich endlich intuitiv verstanden, worum es eigentlich geht.
+            </BLATT>
+            <BLATT link="minimalautomat.gif" name="Minimalautomat erstellen" rang="gruen">
+               Wurde zwar noch nicht gefragt, aber in der Übung drangenommen.
+            </BLATT>
+            <BLATT link="minimalautomaten_einfach.gif" name="Minimalautomat (einfacher)" rang="gelb">
+               Eine weniger formale aber genauso gute Methode.
+            </BLATT>
+            <BLATT link="chormsky_normalform.gif" name="Chromsky Normalform" rang="gruen">
+               Wie wandelt man in eine Chromsky Normalform um. Nur ein paar Hilfestellungen. Wird eh nicht gefragt.
+            </BLATT>
+            <BLATT link="regulaer_ausdruecke.gif" name="Reguläre Ausdrücke" rang="rot">
+               Kommt in TI auch noch vor, ist hier aber wichtiger.
+            </BLATT>
+            <BLATT link="automat_regulaer.gif" name="Tip: Automat -> regulärer Ausdruck" rang="gelb">
+               Einige Hilfen für Anfänger.
+            </BLATT>
+            <BLATT link="aequivalenzen.gif" name="Äquivalenzen und Äquivalenzklassen" rang="rot">
+               Sehr wichtig für Myhill-Nerode, aber auch in TI3. Habe ich nie richtig kapiert, deshalb bin ich es mal ganz systematisch angegangen.
+            </BLATT>
+            <BLATT link="myhill_nerode.gif" name="Myhill-Nerode" rang="gelb">
+               Pumping-Lemma light. Sagt so einiges über reguläre Sprachen aus, ist aber oft schwierig damit umzugehen.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Kontextfreie, kontextsensitive und Typ-0 Sprachen">
+            <BLATT link="kellerautomaten.gif" name="Kellerautomaten" rang="rot">
+               Zumindest damit umgehen können sollte man. Oder das Prinzip verstehen. Wird auch TheoInf2 gebraucht. WEnn man ihn verstanden hat, sind Turing Maschinen auch einfach.
+            </BLATT>
+            <BLATT link="cyk.gif" name="CYK-Algorithmus" rang="gelb">
+               Ist nicht schwer, wenn man mal drauf gekommen ist. Ich sehe aber noch ein Problem mit dem Schöning-Beispiel, das ich noch lösen muß. Deshalb noch mit Vorsicht zu genießen.
+            </BLATT>
+            <BLATT link="turing_maschinen.gif" name="Turing-Maschinen" rang="gelb">
+               Turing Maschinen werden auch später noch gebraucht. Interessante Sache, ist aber noch nicht gefragt worden.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Berechenbarkeitstheorie">
+            <BLATT link="turing_berechenbarkeit.gif" name="Turing-Berechenbarkeit" rang="gruen">
+               Man kann Turing-Maschinen auch zur Berechnung von Funktionen verwenden
+            </BLATT>
+            <BLATT link="loop_berechenbarkeit.gif" name="LOOP-Berechenbarkeit" rang="gelb">
+               Funktion, die sicher terminiert. Nicht sehr umfangreich, aber sicher.
+            </BLATT>
+            <BLATT link="while_goto_turing.gif" name="WHILE GOTO Turing" rang="gruen">
+               Die anderen Möglichkeiten von Berechenbarkeit.
+            </BLATT>
+            <BLATT link="rekursiv_berechenbar.gif" name="Rekursiv berechenbar" rang="rot">
+               Ganz interessant. War schon dran. Sollte man kennen.
+            </BLATT>
+            <BLATT link="m-rekursion.gif" name="Minimum-Rekursion" rang="gelb">
+               Ich habe bisher noch kein Beispiel für die Durchführung der Rekursion finden können, aber zumindest den Operator sollte man berechnen können.
+            </BLATT>
+            <BLATT link="entscheidbarkeit_2.gif" name="Entscheidbarkeit" rang="gruen">
+               Geht Berechenbarkeit auch für Sprachen?
+            </BLATT>
+            <BLATT link="postsches_korrespondenzproblem.gif" name="Postsches Korrespondenzproblem" rang="gelb">
+               War in Übung, aber noch nicht in der Prüfung. Ist aber eine nette Aufgabe.
+            </BLATT>
+         </KAPITEL>
+      </FACH>
+   
+   
+      <FACH name="Theoretische Informatik 2" linkid="ti2">
+         <KAPITEL name="Grundbegriffe und Grammatiken">
+            <BLATT link="semi_thue.gif" name="Semi-Thue Systeme" rang="rot">
+               Kommt wohl in einer oder anderen Form dran.
+            </BLATT>
+            <BLATT link="markov_algorithmen.gif" name="Markov-Algorithmen" rang="gelb">
+               Ist schon gefragt worden, aber einfach.
+            </BLATT>
+            <BLATT link="formales_system.gif" name="Formales System" rang="gruen">
+               Ein paar Definitionen.
+            </BLATT>
+            <BLATT link="kantorowitsch_baeume.gif" name="Kantorowitsch-Bäume" rang="gelb">
+               Wie vereinfacht man Ableitungsbäume, um sie möglichst übersichtlich zu machen?
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Halbgruppen, Relationen, Graphen">
+            <BLATT link="halbgruppen_monoide.gif" name="Halbgruppen und Monoide" rang="gelb">
+               Ist Grundwissen. Leicht, aber ohne das geht's nicht.
+            </BLATT>
+            <BLATT link="struktur_1verknuepfung.gif" name="Algebraische Strukturen mit einer Verknüpfung" rang="gelb">
+               Halbgruppen, Monoide, Gruppen.
+            </BLATT>
+            <BLATT link="struktur_2verknuepfung.gif" name="Algebraische Strukturen mit zwei Verknüpfungen" rang="rot">
+               Ringe und Körper. Werden in TI3 extrem wichtig.
+            </BLATT>
+            <BLATT link="goedelnummerierung.gif" name="Gödelnummerierung" rang="gelb">
+               Schreit förmlich Klausuraufgabe, ist aber wohl etwas zu simpel.
+            </BLATT>
+            <BLATT link="listen.gif" name="Listen" rang="gruen">
+               Sollte eigentlich selbstverständlich sein.
+            </BLATT>
+            <BLATT link="graphen.gif" name="Graphen" rang="gelb">
+               Grundwissen. Wird noch viel für Automaten gebraucht.
+            </BLATT>
+            <BLATT link="wege_zyklen.gif" name="Wege und Zyklen" rang="gruen">
+               Wie sieht es in einem Graphen aus?
+            </BLATT>
+            <BLATT link="waelder_baeume.gif" name="Wälder und Bäume" rang="gruen">
+               Bin mir noch nicht sicher, ob ich Wälder richtig interpretiert habe. Sollten aber eh selten Vorkommen.
+            </BLATT>
+            <BLATT link="eigenschaften_graphen.gif" name="Eigenschaften von Graphen" rang="gruen">
+               Eingenschaften je nach dem, wie sie aussehen.
+            </BLATT>
+            <BLATT link="adjazenzmatrix.gif" name="Adjazenzmatrix und -Liste" rang="gelb">
+               Einfache Aufgabe, könnte aber für einen oder anderen Punkt gut sein, wenn der Aufgabengeber einen guten Tag hat.
+            </BLATT>
+            <BLATT link="endliche_automaten.gif" name="Endliche Automaten" rang="gelb">
+               Ist nicht schwierig, aber essentiell für TheoInf 1 und 2, obwohl so direkt wahrscheinlich gar nicht danach gefragt wird.
+            </BLATT>
+            <BLATT link="regulaerer_ausdruck.gif" name="Reguläre Ausdrücke" rang="gruen">
+               So oder so, reguläre Ausdrücke sind wichtig.
+            </BLATT>
+            <BLATT link="reg_ausdruck_in_automat.gif" name="Reguläre Ausdrücke in Automaten wandeln" rang="gelb">
+               Es wird oft gefragt, welche regulären Ausdrücke ein Automat beschreibt, es geht aber auch umgekehrt.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Relationen, Funktionen und Verbände">
+            <BLATT link="relationen.gif" name="Relationen" rang="rot">
+               Essentiell, Grundwissen.
+            </BLATT>
+            <BLATT link="hasse_diagramm.gif" name="Hasse-Diagramme" rang="gruen">
+               Eine Art, Halbordnungen darzustellen.
+            </BLATT>
+            <BLATT link="topolog_sortieren.gif" name="Topologisches Sortieren" rang="gruen">
+               Ist zu einfach, kommt wohl nicht dran. Der Vollständigkeit halber.
+            </BLATT>
+            <BLATT link="schranken.gif" name="Schranken" rang="gelb">
+               Ich muß gestehen, so ganz habe ich es nicht kapiert. Aber das hier ist, was in den Büchern steht.
+            </BLATT>
+            <BLATT link="arten_von_relationen.gif" name="Arten von Relationen" rang="gelb">
+               Ist für Beweise ziemlich wichtig. Beschreibt auch Halbordnungen.
+            </BLATT>
+            <BLATT link="halbordnungen.gif" name="Arten von Halbordnungen" rang="gelb">
+               Im Skript wird über Halbordnungen viel geschrieben. Da muß was dran sein. Enthält auch Lexikographische Ordnung.
+            </BLATT>
+            <BLATT link="ordnungen.gif" name="Ordnungen im Allgemeinen" rang="rot">
+               Überarbeitete Version des obigen Blattes.
+            </BLATT>
+            <BLATT link="funktionen2.gif" name="Funktionen" rang="gruen">
+               Einige grundsätzliche Eigenschaften. Der Bezug zur Mathematik ist aber teilweise noch etwas schwammig.
+            </BLATT>
+            <BLATT link="verband.gif" name="Verbände" rang="gruen">
+               Eigentlich nur als Herleitung für Bool'sche Algebra wichtig, durchlesen sollte man es aber schon.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Termalgebra">
+            <BLATT link="algebren.gif" name="Algebren" rang="gruen">
+               Einführende Vorstellung, was Algebren eigentlich sind.
+            </BLATT>
+            <BLATT link="terme_ersetzung.gif" name="Terme und Termersetzung" rang="gruen">
+               Wohl zu primitiv für eine Klausuraufgabe.
+            </BLATT>
+            <BLATT link="ausdruecke_kontextfrei.gif" name="Darstellung von (kontextfreien) Grammatiken" rang="gelb">
+               So ähnlich wie Chromski-Normalform, aber für Programmiersprachen angepasst.
+            </BLATT>
+            <BLATT link="boolsche_algebra.gif" name="Boolsche Algebra" rang="gruen">
+               Ist nicht so offensichtlich, aber wichtig. Hilft auch etwas beimx Verständnis von Verbänden. Veraltete Version
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Aussagenlogik und Prädikatenlogik">
+            <BLATT link="boolsche_rechnen.gif" name="Rechnen mit Boolscher Algebra" rang="gelb">
+               Ich hab mich hier an OTRS erinnert und das mit eingebracht. Auch eine bessere Erinnerung daran, wie Bool'sche Algebra eigentlich definiert ist.
+            </BLATT>
+            <BLATT link="aussagenlogik.gif" name="Aussagenlogik" rang="gelb">
+               Die Grundbegriffe.
+            </BLATT>
+            <BLATT link="erfuellbarkeit.gif" name="Erfüllbarkeit von Termen" rang="rot">
+               War Klausuraufgabe. Sind leichte Punkte.
+            </BLATT>
+            <BLATT link="aussagenlogik_normalformen.gif" name="Aussagenlogische Normalformen erstellen" rang="gelb">
+               Entweder algebraisch oder über Wahrheitstafeln.
+            </BLATT>
+            <BLATT link="folgerungen.gif" name="Folgerungen" rang="gruen">
+               Es geht um Kalküle und so. Dafür bräuchte man ein eigenes Buch. In der Vorlesung kam nur ein kurzer Überblick dran, worum es eigentlich geht.
+            </BLATT>
+            <BLATT link="praedikatenlogik_prosa.gif" name="Prosabeschreibung der Prädikatenlogik" rang="rot">
+               Zum besseren Verständnis Formeln und in Worten erklärt.
+            </BLATT>
+            <BLATT link="praedikatenlogik.gif" name="Rechenregeln der Prädikatenlogik" rang="rot">
+               (Fast) alle Regeln zum Umformen. Substitution ging aus Platzgründen nicht mehr.
+            </BLATT>
+            <BLATT link="praedikatenlogik_normalformen2.gif" name="Normalformen der Prädikatenlogik" rang="gelb">
+               Könnte Ausgangspunkt für eine Umformaufgabe werden. Kurz mal durchlesen.
+            </BLATT>
+         </KAPITEL>
+      </FACH>
+   
+   
+      <FACH name="Theoretische Informatik 3" linkid="ti3">
+         <KAPITEL name="Mitschriften und Grundlagen">
+            <BLATT link="tiueb.tar" name="Mitschrift Übungen" rang="grau">
+               Alle Mitschriften zu den TI 3 Übungen 2004.
+            </BLATT>
+            <BLATT link="logarithmen.gif" name="Logarithmen" rang="rot">
+            Unter dem Kopfkissen aufbewahren, wenn noch nicht intus.
+            </BLATT>
+            <BLATT link="last_minute_1.gif" name="Last Minute Notizen 1" rang="gelb">
+               Sachen zum Auswendiglernen, die ich bei einer letzten Durchsicht des Skripts zusammengeschrieben habe.
+            </BLATT>
+            <BLATT link="last_minute_2.gif" name="Last Minute Notizen 2" rang="gelb">
+               Teil 2 davon.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Multiplikationen und Fibonacci">
+            <BLATT link="exponentiation_schnell.gif" name="Schnelle Exponentiation" rang="rot">
+            Wurde schon gefragt! Und selbst wenn nicht, funktionsweise ist für andere Aufgaben wichtig!
+            </BLATT>
+            <BLATT link="russische_multiplikation.gif" name="Russische Bauernmultiplikation" rang="gruen">
+               Nicht sonderlich wichtig. Beweis über Schulmultiplikation im Dualverfahren.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Komplexität">
+            <BLATT link="landau_symbole.gif" name="Landau-Symbole" rang="gelb">
+               Grundwissen. Mehr zur Erinnerung als sonstwas.
+            </BLATT>
+            <BLATT link="rechnen_mit_landau.gif" name="Rechnen mit Landau" rang="gelb">
+               Einige Regeln, wie man mit Landau-Symbolen umzugehen hat. Können bei einigen Fragestellungen helfen.
+            </BLATT>
+            <BLATT link="landau_beispiele.gif" name="Landau-Beispiele" rang="gelb">
+               Bestimmte Beispiele für Auflösung von Rekursionsgleichungen. Aber wenn das drankommt, bin ich sowieso aufgeschmissen.
+            </BLATT>
+            <BLATT link="komplexitaet.gif" name="Komplexität" rang="gruen">
+               Einige Notationen und Merkregeln zur Komplexität. Nicht richtig Prüfungsrelevant, haben mir aber beim Verständnis des Skrpits geholfen.
+            </BLATT>
+            <BLATT link="master_theorem.gif" name="Das Master Theorem" rang="gelb">
+               Ein paar Sachen zum Auswendiglernen. Wie komplex sind Rekursionen, und Devide and Conquer Algorithmen im allgemeinen?
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Sortieralgorithmen">
+            <BLATT link="selection_sort.gif" name="SelectionSort" rang="gruen">
+               Ist recht schnell erklärt. Ist aber nicht so wichtig.
+            </BLATT>
+            <BLATT link="insertionsort2.gif" name="InsertionSort" rang="gelb">
+               Achtung! Die alte Version war nicht richtig!
+            </BLATT>
+            <BLATT link="merge_sort_rekursiv.gif" name="MergeSort (rekursiv)" rang="gelb">
+               Schon alleine weil es der klassiche Devide and Conquer Algorithmus ist, sollte man ihn sich merken.
+            </BLATT>
+            <BLATT link="merge_sort_iterativ.gif" name="MergeSort (iterativ)" rang="gruen">
+               Die iterative Variante habe ich nur der vollständigkeit halber aufgeführt.
+            </BLATT>
+            <BLATT link="pfad_binaerbaum.gif" name="Pfad im Binärbaum" rang="gruen">
+               Diese Aufgabenstellung ist nicht so wichtig, aber zum Verständnis geeignet.
+            </BLATT>
+            <BLATT link="heap_erstellen.gif" name="Einen Heap erstellen" rang="rot">
+               Wir wollen dem Prof doch keinen Anlass geben, wieder über die falschen Vorstellungen der Prüflinge, was Heaps angeht, schockiert zu sein.
+            </BLATT>
+            <BLATT link="heap_sortieren.gif" name="Mit Heap sortieren" rang="gelb">
+               Benutzen sollte man ihn auch können. Ist nicht schwer, nur etwas kompliziert.
+            </BLATT>
+            <BLATT link="heapsort_beispiel.gif" name="Beispiel für Heapsort" rang="gruen">
+               Ich gehe jetzt ein klein wenig anders vor. Als Übersicht ganz nett.
+            </BLATT>
+            <BLATT link="quick_sort.gif" name="Quicksort" rang="gelb">
+               Noch mal üben sollte helfen. Muß nicht drankommen, kann aber.
+            </BLATT>
+            <BLATT link="sortier_komplexitaet.gif" name="Sortier Komplexität" rang="rot">
+               Die Anzahl der Vergleiche zum Auswendiglernen.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Enthropie, Codierung, Bäume">
+            <BLATT link="hoehe_von_baeumen.gif" name="Höhe von Bäumen" rang="gelb">
+               Ein paar Grundbegriffe, die man vielleicht seit OTRS1 vergessen hat.
+            </BLATT>
+            <BLATT link="enthropie_shannon.gif" name="Enthropie nach Shannon" rang="gelb">
+               Die Eigenschaften sind fast wichtiger als die Formel an sich.
+            </BLATT>
+            <BLATT link="gewichtete_baeume.gif" name="Gewichtete Bäume" rang="gelb">
+               Eigentlich eine selbstverständlichkeit, sollte man sich aber wirklich merken.
+            </BLATT>
+            <BLATT link="huffman.gif" name="Huffman" rang="gelb">
+            Ist einfach und für ein paar sichere Punkte gut! Nur zur Erinnerung um Zeit zu sparen.
+            </BLATT>
+            <BLATT link="huffman_baumlos.gif" name="Huffman (baumlose Version)" rang="gruen">
+               So wurde es im Skript gezeigt. Wenn man ihn beherrscht, geht es damit schneller. Aber man kann mehr Leichtsinnsfehler machen.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Z-Ring und Euklid">
+            <BLATT link="ring.gif" name="Eigenschaften eines Ringes" rang="gruen">
+               Nur für Profis interessant.
+            </BLATT>
+            <BLATT link="z_eigenschaften.gif" name="Eigenschaften des Z-Ringes" rang="gelb">
+               Einige Grundbegriffe und Regeln für Z.
+            </BLATT>
+            <BLATT link="inverse_in_zn.gif" name="Inverse im Zn Körper" rang="rot">
+               So bildet man Inverse in Zn. Mit Herleitung.
+            </BLATT>
+            <BLATT link="exponent_modulo.gif" name="Exponentiation mit Modulo" rang="rot">
+               Für fast alle Berechnungen im Z-Ring braucht man diese Regel.
+            </BLATT>
+            <BLATT link="euklid_herleitung.gif" name="Euklid mit Herleitung" rang="gelb">
+               Der erweiterte ist wichtiger, aber ich habe mir mal die Mühe gemacht, auch die Herleitung durchzugehen.
+            </BLATT>
+            <BLATT link="euklid_erweitert.gif" name="Erweiterter Euklidischer Algorithmus" rang="rot">
+            Oft gefragt! Wichtige Grundlage! Unbedingt üben!
+            </BLATT>
+            <BLATT link="lineare_gleichungen.gif" name="Lineare Gleichungen mit erweiterten Euklid" rang="gelb">
+               Ich bin mir nicht sicher, ob ich das so richtig aufgeschrieben habe. Da steckt mehr dahinter. Da muß ich nachhaken. Wäre wichtig.
+            </BLATT>
+            <BLATT link="phi_funktion.gif" name="Eulersche Phi-Funktion" rang="rot">
+               Wird für RSA noch sehr wichtig. Und für modulare Arithmetik. Das alte Blatt war nicht gut, ich habe es übersichtlicher gemacht.
+            </BLATT>
+            <BLATT link="exponentiation_modulo_2.gif" name="Exponentiation mit Modulo 2" rang="gruen">
+               War erste Version. Ist dann absolet geworden.
+            </BLATT>
+            <BLATT link="ordnung_modulo.gif" name="Exponentiation mit Ordnungszahl und Phi" rang="gelb">
+               Ordnungen zu bestimmen braucht Übung, lohnt aber manchmal. Wurde auch schon direkt in frage gestellt.
+            </BLATT>
+            <BLATT link="chinesischer_restesatz.gif" name="Chinesischer Restesatz" rang="rot">
+               Wichtig, wichtig, wichtig.
+            </BLATT>
+            <BLATT link="restesatz_2kongru.gif" name="Chinesischer Restesatz mit zwei Kongruenzen" rang="gruen">
+               Eigentlich nur eine Spezifizierung damit es schneller geht.
+            </BLATT>
+            <BLATT link="nichtteilerfremde_kongruenzen.gif" name="Nichtteilerfremde Kongruenzen" rang="gelb">
+               Kann ein Problem werden. Ist nicht so schwierig, aber es gibt mehrere Lösungsansetze. Muß ich aber erst nochmal durchlesen.
+            </BLATT>
+         </KAPITEL>
+         <KAPITEL name="Primzahlen">
+            <BLATT link="verschlusselung_herleitung.gif" name="Herleitung von Verschlüsselung" rang="gelb">
+               Wenn ihr wissen wollt, wieso das eigentlich funktioniert.
+            </BLATT>
+            <BLATT link="rsa.gif" name="RSA-Verschlüsselung" rang="rot">
+               So oder so, der kommt dran! Und dann sollte man ihn kennen!
+            </BLATT>
+            <BLATT link="primzahlen_gesetze.gif" name="Primzahlengesetze und Verschlüsselung" rang="gelb">
+               Einige Gesetze, die man zum Umformen und der Herleitung der RSA braucht. Außerdem eine Kurzbeschreibung von symmetrischer und asymmetrischer Verschlüsselung. Für ausführliche Erklärung siehe das RSA-Blatt.
+            </BLATT>
+            <BLATT link="fermat.gif" name="Fermat-Test" rang="gelb">
+               So testet man, ob eine Zahl ein Fermat-Zeuge ist.
+            </BLATT>
+            <BLATT link="miller_rabin2.gif" name="Miller Rabin Test" rang="gelb">
+               Überarbeitet und logischer.
+            </BLATT>
+         </KAPITEL>
+      </FACH>
+   </FAECHER>
+
+   <QUELLEN linkid="quellen">
+      <QUELLE>
+         Schöning, Uwe (2001): <LINK href="http://www.amazon.de/exec/obidos/ASIN/3827410991/qid=1093380882/ref=sr_8_xs_ap_i1_xgl/028-2720465-7253327">Theoretische Informatik kurzgefasst</LINK>, 198 Seiten, Spektrum Akademischer Verlag
+      </QUELLE>
+      <QUELLE>
+         Schöning, Uwe (2000): <LINK href="http://www.amazon.de/exec/obidos/ASIN/3827410053/qid=1109886958/ref=sr_8_xs_ap_i1_xgl/302-6476537-3138444">Logik für Informatiker</LINK> Spektrum Akademischer Verlag
+      </QUELLE>
+      <QUELLE>
+         Socher Rolf (2003): <LINK href="http://www.amazon.de/exec/obidos/ASIN/3446221778/qid=1108062433/ref=sr_8_xs_ap_i1_xgl/302-6572922-4772068">Theoretische Grundlagen der Informatik</LINK>, 187 Seiten, Fachbuchverlag Leipzig
+      </QUELLE>
+      <QUELLE>
+      Bart, Friedrich u. Haller, Rudolf (1998): <LINK href="http://www.amazon.de/exec/obidos/ASIN/3486025112/qid=1093380962/ref=sr_8_xs_ap_i1_xgl/028-2720465-7253327">Stochastik - Leistungskurs der Kollegstufe</LINK>, 432 Seiten, Oldenbourg Schulbuchverlag
+      </QUELLE>
+      <QUELLE>
+         Merziger, Gerhard u. Wirth, Thomas (1999): <LINK href="http://www.amazon.de/exec/obidos/ASIN/3923923333/qid=1093380988/ref=sr_8_xs_ap_i1_xgl/028-2720465-7253327">Repetitorium der höheren Mathematik</LINK>, 566 Seiten, Binomi Verlag      
+      </QUELLE>
+      <QUELLE>
+         Merziger, Gerhard et. Al. (2001): <LINK href="http://www.amazon.de/exec/obidos/ASIN/392392335X/qid=1093380988/ref=sr_8_xs_ap_i1_xgl/028-2720465-7253327">Formeln und Hilfen zur höheren Mathematik</LINK>, 237 Seiten, Binomi Verlag
+      </QUELLE>
+      <QUELLE>
+         Strehl, Volker (2004): <LINK href="http://www8.informatik.uni-erlangen.de/IMMD8/Lectures/THINF3/Tagebuch04/index.html">Einführung in die Theoretische Informatik 3</LINK> (Skript)
+      </QUELLE>
+      <QUELLE>
+         Graef, Friedrich (2003): <LINK href="http://www2.am.uni-erlangen.de/~graef/wr1/wr1inh.html">Wahrscheinlichkeitsrechnung 1 für Ingenieure</LINK> (Skript)
+      </QUELLE>
+      <QUELLE>
+         Jablonski, Stefan u. Goos, Gerhard (2004): Theoretische Informatik 1 (Skript)
+      </QUELLE>
+      <QUELLE>
+         <LINK href="http://www.wikipedia.de">Wikipedia</LINK>
+      </QUELLE>
+      <QUELLE>
+         Heun, Volker (2000): <LINK href="http://www.amazon.de/exec/obidos/ASIN/3528031409/qid=1093895415/ref=sr_8_xs_ap_i1_xgl/028-2720465-7253327">Grundlegende Algorithmen</LINK>, 346 Seiten, Vieweg Verlagsgesellschaft
+      </QUELLE>
+      <QUELLE>
+         Einbock, Reinhardt u. Hornschuh, H.-D. (2001): <LINK href="http://www.amazon.de/exec/obidos/ASIN/3786301107/qid%3D1096368584/302-0833376-1280001">Differentialrechnung vestehen</LINK>, 176 Seiten, Manz Verlag München
+      </QUELLE>
+      <QUELLE>
+         Einbock, Reinhardt u. Hornschuh, H.-D. (1998): <LINK href="http://www.amazon.de/exec/obidos/ASIN/3786301115/ref=pd_bxgy_text_2/302-0833376-1280001">Integralrechnung verstehen</LINK>, 176 Seiten, Manz Verlag München
+      </QUELLE>
+      <QUELLE>
+         Rautenberg, Wolfgang (1995): <LINK href="http://www.amazon.de/exec/obidos/ASIN/3528167548/qid=1109886984/ref=sr_8_xs_ap_i1_xgl/302-6476537-3138444">Einführung in die Mathematische Logik</LINK>, 2.Auflage, Vieweg Verlag, Braunschweig
+      </QUELLE>
+      <QUELLE>
+         Wagenknecht, Christian (2003): <LINK href="http://www.amazon.de/exec/obidos/ASIN/3446223142/qid=1110216186/ref=sr_8_xs_ap_i1_xgl/302-6476537-3138444">Algorithmen und Komplexität</LINK>, 182 Seiten, Fachbuchverlag Leipzig
+      </QUELLE>
+   </QUELLEN>
+
+</MAIN>

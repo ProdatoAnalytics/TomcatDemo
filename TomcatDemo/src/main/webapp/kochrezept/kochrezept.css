@@ -1,0 +1,16 @@
+   body { font-size:15pt;font-family:Helvetica,Arial,sans-serif; }
+   table {border-collapse: collapse; width: 100% }
+   h3 { margin-top:20px; margin-bottom:10px; text-align:center; }
+   h5 { margin-top:10px; margin-bottom:5px; }
+   td { border: thin solid #202020 }
+   div  { font-size:x-small; font-weight:bold; }
+   .toptable { width: 85%; border: none; }
+   .status  { font-size:x-small; font-weight:bold; border: thin solid #FF0000 ; background-color:#FFFF00; padding-left:3px; padding-right:3px;}
+   .buttonwidth  { width: 15px; }
+   .spaceholder { width: 5%; border: none;}
+   .noborder { border: none; }
+   .tagebuch { margin-top:40px; margin-bottom:40px; font-size:small; padding:12px; font-weight:bold; }   
+   .tagebuchdatum { white-space:nowrap; color:#0000FF }
+   .quelle { font-style:italic; font-size:small; text-indent:1cm; }
+   .inhalttable { border: none; }
+   .inhaltspaceholder { width: 25%; border: none;}

@@ -7,4 +7,10 @@
     <tns:menuitem url="/TomcatDemo/subtests/HelloWorld.html">
     Einfache Hello World Seite.
   </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/kochrezept/index.html">
+    Spickzettel für Mathe und Theoretische Informatik (html-Version).
+  </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/kochrezept/index.xml">
+    Spickzettel für Mathe und Theoretische Informatik (XML-Version).
+  </tns:menuitem>
 </tns:menu>
