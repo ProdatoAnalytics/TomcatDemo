@@ -7,8 +7,8 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 11
-targetCompatibility = 11
+sourceCompatibility = 17
+targetCompatibility = 17
 
 dependencies {
 	implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
@@ -35,8 +35,10 @@ dependencies {
 	implementation group: 'org.eclipse.persistence', name: 'org.eclipse.persistence.jpa', version: '3.0.2'
 	
     // JSF
-	implementation group: 'org.apache.myfaces.core', name: 'myfaces-api', version: '3.0.1'
-	implementation group: 'org.apache.myfaces.core', name: 'myfaces-impl', version: '3.0.1'
+	//implementation group: 'org.apache.myfaces.core', name: 'myfaces-api', version: '3.0.1'
+	//implementation group: 'org.apache.myfaces.core', name: 'myfaces-impl', version: '3.0.1'
+    implementation group: 'org.apache.myfaces.core', name: 'myfaces-api', version: '4.0.0'
+    implementation group: 'org.apache.myfaces.core', name: 'myfaces-impl', version: '4.0.0'
     
     // Primefaces
     implementation group: 'org.primefaces', name: 'primefaces', version: '11.0.0-RC1', classifier: 'jakarta'
