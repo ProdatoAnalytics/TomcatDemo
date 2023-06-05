@@ -47,5 +47,15 @@
             <tns:tag>jsfc</tns:tag>
         </tns:tags>
     </tns:tip>
+    <tns:tip>
+        <tns:topic>Resource Library</tns:topic>
+        <tns:description>Resource Libraries können entweder für unterschiedliche Themes (bei css, images etc.) verwendet werden, auch wenn das Theme statisch ist. Interessanter ist, dass man unterschiedliche Versionen verwenden kann. Auch wenn immer die neueste verwendet wird, werden aber Browser dazu gebracht, den Cache zu ignorieren und z.B. die CSS-Datei neu zu laden.</tns:description>
+        <tns:locations>
+            <tns:location>ResourceLibrary.xhtml, webapp/resources</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>library</tns:tag>
+        </tns:tags>
+    </tns:tip>
 
 </tns:tips>
