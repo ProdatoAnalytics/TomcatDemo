@@ -16,4 +16,7 @@
     <tns:menuitem url="/TomcatDemo/jsf/ResourceLibrary.xhtml">
     Resource Libraries
   </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/jsf/SkippedComments.xhtml">
+    Skipped Comments
+  </tns:menuitem>
 </tns:menu>

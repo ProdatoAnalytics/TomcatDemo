@@ -57,5 +57,15 @@
             <tns:tag>library</tns:tag>
         </tns:tags>
     </tns:tip>
+    <tns:tip>
+        <tns:topic>Skipped Comments</tns:topic>
+        <tns:description>Wenn Kommentare sich im generierten Code erhalten, kann das zu unerwünschten Nebeneffekten führen. Auskommentierter Code wird interpretiert oder als Zelle in Spalten eingesetzt.</tns:description>
+        <tns:locations>
+            <tns:location>web.xml</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>javax.faces.FACELETS_SKIP_COMMENTS</tns:tag>
+        </tns:tags>
+    </tns:tip>
 
 </tns:tips>

@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<style>
+    td {
+       border: solid 
+    }
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Resource Library Test</title>
+</head>
+<body>
+    <h1>Resource Library Test</h1>
+    <h:form>
+        <p>Wenn die folgende Box zwei Zeilen hat, werden Kommentare nicht augeblendet:</p>
+        <h:panelGrid columns="1" style="border: solid">
+            <h:outputText value="Zeile:" />
+            <!-- Kommentar -->
+        </h:panelGrid>
+    </h:form>
+</body>
+</html>
