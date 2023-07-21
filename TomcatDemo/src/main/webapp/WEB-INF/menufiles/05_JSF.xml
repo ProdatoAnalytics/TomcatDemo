@@ -19,4 +19,7 @@
     <tns:menuitem url="/TomcatDemo/jsf/SkippedComments.xhtml">
     Skipped Comments
   </tns:menuitem>
+    <tns:menuitem url="/TomcatDemo/jsf/Log4j2CustomFilter.xhtml">
+    Log4j2 Custom Filter
+  </tns:menuitem>
 </tns:menu>

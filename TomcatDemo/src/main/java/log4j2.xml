@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Configuration strict="true" xmlns="http://logging.apache.org/log4j/2.0/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://logging.apache.org/log4j/2.0/config 
-           https://raw.githubusercontent.com/apache/logging-log4j2/master/log4j-core/src/main/resources/Log4j-config.xsd">
+    packages="com.prodato.norma.demo.tomcat.log4j">
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout pattern="%5p %d [%t] - %m  (%c) %l%n" />
         </Console>
+        <Console name="consoleFiltered" target="SYSTEM_OUT">
+            <PatternLayout pattern="Filtered: %5p - %m%n" />
+            <filters>
+                <RegexFilter regex=".*regexfiltered.*" onMatch="DENY" onMismatch="NEUTRAL" />
+                <Log4j2CustomFilter />
+            </filters>
+        </Console>
     </Appenders>
 
     <Loggers>
-        <Logger name="com.prodato.norma" level="debug" />
+        <Logger name="com.prodato.norma" level="debug"/>
+
+        <Logger name="com.prodato.norma.demo.tomcat.model.Log4j2CustomFilterModel" level="debug">
+            <AppenderRef ref="consoleFiltered" />
+        </Logger>
 
         <Logger name="com.prodato.norma.demo.tomcat.utils.DebugPhaseListener" level="debug" />
 

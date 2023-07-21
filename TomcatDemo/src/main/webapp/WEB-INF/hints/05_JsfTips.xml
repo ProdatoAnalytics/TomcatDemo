@@ -67,5 +67,16 @@
             <tns:tag>javax.faces.FACELETS_SKIP_COMMENTS</tns:tag>
         </tns:tags>
     </tns:tip>
+    <tns:tip>
+        <tns:topic>Log4j2 Custom Filter</tns:topic>
+        <tns:description>Test für einen Custom Filter in Log4j2</tns:description>
+        <tns:locations>
+            <tns:location>log4j2.xml</tns:location>
+            <tns:location>Log4j2CustomFilter.xhtml</tns:location>
+        </tns:locations>
+        <tns:tags>
+            <tns:tag>log4j</tns:tag>
+            <tns:tag>Filter</tns:tag>
+        </tns:tags>    </tns:tip>
 
 </tns:tips>

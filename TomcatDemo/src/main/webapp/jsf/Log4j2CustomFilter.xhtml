@@ -1,0 +1,14 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Logj2 Custom Filter Demo</title>
+</head>
+<body>
+    <h1>Logj2 Custom Filter Demo</h1>
+    <h:form>
+        <h:commandButton value="simpleLoggingAction" action="#{log4j2CustonFilterModel.simpleLoggingAction}" /><br/>
+        <h:commandButton value="regexFilterLoggingAction" action="#{log4j2CustonFilterModel.regexFilterLoggingAction}" /><br/>
+        <h:commandButton value="customDenialLoggingAction" action="#{log4j2CustonFilterModel.customDenialLoggingAction}" /><br/>
+    </h:form>
+</body>
+</html>
